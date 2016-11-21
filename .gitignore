@@ -1,16 +1,20 @@
 # .gitignore
 
+bin/*
+
 client-*/
 client/debug*/
 client/release*/
 client/object_script*
 client/config.ini
+client/client
 
 server/authorized
 server/stats
 server-*/
 server/debug*/
 server/release*/
+server/server
 
 build*/
 binary*/
