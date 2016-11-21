@@ -466,7 +466,6 @@ void Server::disconnectClient( ClientsIterator client )
     if( client->playingWith != clients_.end() )
         client->playingWith->playingWith = clients_.end();
     client->playingWith = clients_.end();
-
     qDebug() << "User" << client->login << "is disconnected";
 }
 
@@ -477,6 +476,7 @@ void Server::disconnectClientAndRecord(
     bool winnerStatus
 )
 {
+    qDebug() << "in Server::disconnectClientAndRecord";
     if( client == clients_.end() )
         return;
 
@@ -493,7 +493,9 @@ void Server::disconnectClientAndRecord(
             : client->playingWith.value();
 
         winner.send( "win:" );
-        looser.send( "lose:" );
+
+        looser.send("lose_result:"+ winner.getField());
+        qDebug() << "Send to a user "<<looser.login<<" lose_result: "<< winner.getField();
 
         recordSessionStatistic(
             winner.login,

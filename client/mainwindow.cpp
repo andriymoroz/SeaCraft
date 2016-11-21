@@ -87,6 +87,11 @@ void MainWindow::paintEvent( QPaintEvent* event )
     case ST_WAITING_STEP:
         setStatus( tr("wait for enemy") );
         break;
+
+    case ST_VIEW_RESULTS:
+        setStatus( tr("results view") );
+        break;
+
     }
 }
 
@@ -225,7 +230,8 @@ void MainWindow::showGameResult( GameResult result )
         : tr( "You lose!" );
 
     this->update();
-    QMessageBox::information( this, tr("Game result"), messageString );
+      QMessageBox::information( this, tr("Game result"), messageString );
+
 }
 
 void MainWindow::showGameError( GameErrorMessage message )

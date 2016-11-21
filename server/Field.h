@@ -40,7 +40,8 @@ public:
     bool isAllKilled() const;
     bool makeShot( int x, int y, Shots& killShots );
     void addKilledShip( int shipSize );
-
+// My addition
+    QString getField();
     void showField() const;
 
 private:

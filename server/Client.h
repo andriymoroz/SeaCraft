@@ -30,6 +30,7 @@ public:
     QString login;
 
     void setField( const QString& field, int shipSize );
+    QString getField();
     Field* field();
     void setSeen();
     size_t lastSeen();

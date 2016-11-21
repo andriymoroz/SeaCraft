@@ -158,3 +158,29 @@ void Model::clearMyField()
 {
     myField->clear();
 }
+
+void Model::setEnemyField(QString enemyFieldSt)
+{
+    Cell tmp = CL_SHIP;
+    int i,j;
+
+    //should be fieldsize as define
+    for(i = 0; i < 10; i++)
+        for (j = 0; j < 10; j++)
+        {
+            switch (enemyFieldSt[i*10+j].toLatin1())
+            {
+                case '1':
+                    tmp = CL_HALF;
+                break;
+                case '2':
+                    tmp = CL_SHIP;
+                break;
+                default:
+                    tmp = CL_CLEAR;
+            }
+            if (getEnemyCell(i,j) == 0)
+                setEnemyCell(i,j,tmp);
+        }
+
+}

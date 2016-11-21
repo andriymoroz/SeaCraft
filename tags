@@ -1,0 +1,749 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AboutDialog	./client/AboutDialog.h	/^    explicit AboutDialog( QWidget* parent = 0, Qt::WindowFlags f = 0 );$/;"	p	class:AboutDialog	access:public	signature:( QWidget* parent = 0, Qt::WindowFlags f = 0 )
+AboutDialog	./client/AboutDialog.h	/^class AboutDialog : public QDialog$/;"	c	inherits:QDialog
+AboutDialog::AboutDialog	./client/AboutDialog.h	/^    explicit AboutDialog( QWidget* parent = 0, Qt::WindowFlags f = 0 );$/;"	p	class:AboutDialog	access:public	signature:( QWidget* parent = 0, Qt::WindowFlags f = 0 )
+AboutDialog::labelInfo	./client/AboutDialog.h	/^    QLabel* labelInfo;$/;"	m	class:AboutDialog	access:protected
+AboutDialog::labelURL	./client/AboutDialog.h	/^    QLabel* labelURL;$/;"	m	class:AboutDialog	access:protected
+AboutDialog::okButton	./client/AboutDialog.h	/^    QPushButton* okButton;$/;"	m	class:AboutDialog	access:protected
+AboutDialog::on_labelURL_clicked	./client/AboutDialog.h	/^    void on_labelURL_clicked( const QString& url );$/;"	p	class:AboutDialog	access:public	signature:( const QString& url )
+AboutDialog::paintEvent	./client/AboutDialog.h	/^    void paintEvent( QPaintEvent* event );$/;"	p	class:AboutDialog	access:protected	signature:( QPaintEvent* event )
+AboutDialog::verticalLayout	./client/AboutDialog.h	/^    QVBoxLayout* verticalLayout;$/;"	m	class:AboutDialog	access:protected
+Application	./server/Application.h	/^    explicit Application( int& argc, char* argv[] );$/;"	p	class:Application	access:public	signature:( int& argc, char* argv[] )
+Application	./server/Application.h	/^class Application : public QCoreApplication$/;"	c	inherits:QCoreApplication
+Application::Application	./server/Application.h	/^    explicit Application( int& argc, char* argv[] );$/;"	p	class:Application	access:public	signature:( int& argc, char* argv[] )
+Application::forceQuit_	./server/Application.h	/^    bool forceQuit_;$/;"	m	class:Application	access:private
+Application::init	./server/Application.h	/^    bool init();$/;"	p	class:Application	access:public	signature:()
+Application::isOption	./server/Application.h	/^    bool isOption( const QString& arg, const QString& option );$/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& option )
+Application::isOption	./server/Application.h	/^    bool isOption($/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& option1, const QString& option2 )
+Application::parseCmdLine	./server/Application.h	/^    void parseCmdLine();$/;"	p	class:Application	access:private	signature:()
+Application::parseOptions	./server/Application.h	/^    bool parseOptions( const QString& arg );$/;"	p	class:Application	access:private	signature:( const QString& arg )
+Application::parseOptionsWithParam	./server/Application.h	/^    bool parseOptionsWithParam( const QString& arg, const QString& param );$/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& param )
+Application::server_	./server/Application.h	/^    Server* server_;$/;"	m	class:Application	access:private
+Application::spawnServer	./server/Application.h	/^    bool spawnServer();$/;"	p	class:Application	access:private	signature:()
+Application::~Application	./server/Application.h	/^    ~Application();$/;"	p	class:Application	access:public	signature:()
+CI_BOTTOM	./server/Field.h	/^        CI_BOTTOM,$/;"	e	enum:Field::Cell
+CI_CENTER	./server/Field.h	/^        CI_CENTER,$/;"	e	enum:Field::Cell
+CI_CLEAR	./server/Field.h	/^        CI_CLEAR = 0,$/;"	e	enum:Field::Cell
+CI_DAMAGED	./server/Field.h	/^        CI_DAMAGED$/;"	e	enum:Field::Cell
+CI_DOT	./server/Field.h	/^        CI_DOT = 100,$/;"	e	enum:Field::Cell
+CI_HMIDDLE	./server/Field.h	/^        CI_HMIDDLE,$/;"	e	enum:Field::Cell
+CI_LEFT	./server/Field.h	/^        CI_LEFT,$/;"	e	enum:Field::Cell
+CI_RIGHT	./server/Field.h	/^        CI_RIGHT,$/;"	e	enum:Field::Cell
+CI_TOP	./server/Field.h	/^        CI_TOP,$/;"	e	enum:Field::Cell
+CI_VMIDDLE	./server/Field.h	/^        CI_VMIDDLE,$/;"	e	enum:Field::Cell
+CL_CLEAR	./client/Field.h	/^    CL_CLEAR = 0,$/;"	e	enum:Cell
+CL_DOT	./client/Field.h	/^    CL_DOT,$/;"	e	enum:Cell
+CL_HALF	./client/Field.h	/^    CL_HALF$/;"	e	enum:Cell
+CL_SHIP	./client/Field.h	/^    CL_SHIP,$/;"	e	enum:Cell
+CUS_NOTFOUND	./server/Server.h	/^        CUS_NOTFOUND = -1,$/;"	e	enum:Server::CheckUserStatus
+CUS_OK	./server/Server.h	/^        CUS_OK = 0,$/;"	e	enum:Server::CheckUserStatus
+CUS_WRONGPASS	./server/Server.h	/^        CUS_WRONGPASS = 1$/;"	e	enum:Server::CheckUserStatus
+Cell	./client/Field.h	/^enum Cell$/;"	g
+Cell	./server/Field.h	/^    enum Cell$/;"	g	class:Field	access:public
+CellShipsTypeCount	./server/Field.h	/^        CellShipsTypeCount,$/;"	e	enum:Field::Cell
+Cells	./server/Field.h	/^    typedef QVector<Cell> Cells;$/;"	t	class:Field	access:public
+CheckUserStatus	./server/Server.h	/^    enum CheckUserStatus$/;"	g	class:Server	access:public
+Client	./server/Client.h	/^    explicit Client();$/;"	p	class:Client	access:public	signature:()
+Client	./server/Client.h	/^class Client$/;"	c
+Client::Client	./server/Client.h	/^    explicit Client();$/;"	p	class:Client	access:public	signature:()
+Client::ClientIterator	./server/Client.h	/^    typedef QMap<int, Client>::iterator ClientIterator;$/;"	t	class:Client	access:public
+Client::ClientStatus	./server/Client.h	/^    enum ClientStatus$/;"	g	class:Client	access:public
+Client::ST_AUTHORIZED	./server/Client.h	/^        ST_AUTHORIZED,$/;"	e	enum:Client::ClientStatus
+Client::ST_CONNECTED	./server/Client.h	/^        ST_CONNECTED = 0,$/;"	e	enum:Client::ClientStatus
+Client::ST_DISCONNECTED	./server/Client.h	/^        ST_DISCONNECTED$/;"	e	enum:Client::ClientStatus
+Client::ST_MAKING_STEP	./server/Client.h	/^        ST_MAKING_STEP,$/;"	e	enum:Client::ClientStatus
+Client::ST_READY	./server/Client.h	/^        ST_READY,$/;"	e	enum:Client::ClientStatus
+Client::ST_WAITING_STEP	./server/Client.h	/^        ST_WAITING_STEP,$/;"	e	enum:Client::ClientStatus
+Client::field	./server/Client.h	/^    Field* field();$/;"	p	class:Client	access:public	signature:()
+Client::field_	./server/Client.h	/^    Field* field_;$/;"	m	class:Client	access:private
+Client::lastSeen	./server/Client.h	/^    size_t lastSeen();$/;"	p	class:Client	access:public	signature:()
+Client::lastSeen_	./server/Client.h	/^    size_t lastSeen_;$/;"	m	class:Client	access:private
+Client::login	./server/Client.h	/^    QString login;$/;"	m	class:Client	access:public
+Client::playingWith	./server/Client.h	/^    ClientIterator playingWith;$/;"	m	class:Client	access:public
+Client::send	./server/Client.h	/^    void send( const QString& cmd );$/;"	p	class:Client	access:public	signature:( const QString& cmd )
+Client::setField	./server/Client.h	/^    void setField( const QString& field, int shipSize );$/;"	p	class:Client	access:public	signature:( const QString& field, int shipSize )
+Client::setSeen	./server/Client.h	/^    void setSeen();$/;"	p	class:Client	access:public	signature:()
+Client::socket	./server/Client.h	/^    QTcpSocket* socket;$/;"	m	class:Client	access:public
+Client::status	./server/Client.h	/^    ClientStatus status;$/;"	m	class:Client	access:public
+Client::~Client	./server/Client.h	/^    ~Client();$/;"	p	class:Client	access:public	signature:()
+ClientIterator	./server/Client.h	/^    typedef QMap<int, Client>::iterator ClientIterator;$/;"	t	class:Client	access:public
+ClientStatus	./server/Client.h	/^    enum ClientStatus$/;"	g	class:Client	access:public
+Clients	./server/Client.h	/^typedef QMap<int, Client> Clients;$/;"	t
+ClientsIterator	./server/Client.h	/^typedef Clients::iterator ClientsIterator;$/;"	t
+ConnectionInfoDialog	./client/ConnectionInfoDialog.h	/^    explicit ConnectionInfoDialog( QWidget* parent = 0 );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( QWidget* parent = 0 )
+ConnectionInfoDialog	./client/ConnectionInfoDialog.h	/^class ConnectionInfoDialog : public QDialog$/;"	c	inherits:QDialog
+ConnectionInfoDialog::ConnectionInfoDialog	./client/ConnectionInfoDialog.h	/^    explicit ConnectionInfoDialog( QWidget* parent = 0 );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( QWidget* parent = 0 )
+ConnectionInfoDialog::accept	./client/ConnectionInfoDialog.h	/^    void accept();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+ConnectionInfoDialog::addrLabel	./client/ConnectionInfoDialog.h	/^    QLabel* addrLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::addrLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* addrLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::address	./client/ConnectionInfoDialog.h	/^    QString address;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::addressTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* addressTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::applyButton	./client/ConnectionInfoDialog.h	/^    QPushButton* applyButton;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::buttonLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* buttonLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::cancelButton	./client/ConnectionInfoDialog.h	/^    QPushButton* cancelButton;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::eventFilter	./client/ConnectionInfoDialog.h	/^    bool eventFilter( QObject* object, QEvent* event );$/;"	p	class:ConnectionInfoDialog	access:protected	signature:( QObject* object, QEvent* event )
+ConnectionInfoDialog::getAddress	./client/ConnectionInfoDialog.h	/^    QString getAddress() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+ConnectionInfoDialog::getLogin	./client/ConnectionInfoDialog.h	/^    QString getLogin() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+ConnectionInfoDialog::getPassword	./client/ConnectionInfoDialog.h	/^    QString getPassword() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+ConnectionInfoDialog::getPort	./client/ConnectionInfoDialog.h	/^    quint16 getPort();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+ConnectionInfoDialog::layout	./client/ConnectionInfoDialog.h	/^    QGridLayout* layout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::login	./client/ConnectionInfoDialog.h	/^    QString login;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::loginLabel	./client/ConnectionInfoDialog.h	/^    QLabel* loginLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::loginLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* loginLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::loginTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* loginTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::pass	./client/ConnectionInfoDialog.h	/^    QString pass;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::passLabel	./client/ConnectionInfoDialog.h	/^    QLabel* passLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::passLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* passLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::passTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* passTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::port	./client/ConnectionInfoDialog.h	/^    quint16 port;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::setAddressString	./client/ConnectionInfoDialog.h	/^    void setAddressString( const QHostAddress& address, quint16 port );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QHostAddress& address, quint16 port )
+ConnectionInfoDialog::setAddressString	./client/ConnectionInfoDialog.h	/^    void setAddressString( const QString& address, quint16 port );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& address, quint16 port )
+ConnectionInfoDialog::setLogin	./client/ConnectionInfoDialog.h	/^    void setLogin( const QString& login );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& login )
+ConnectionInfoDialog::setPassword	./client/ConnectionInfoDialog.h	/^    void setPassword( const QString& password);$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& password)
+ConnectionInfoDialog::verticalLayout	./client/ConnectionInfoDialog.h	/^    QVBoxLayout* verticalLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+ConnectionInfoDialog::~ConnectionInfoDialog	./client/ConnectionInfoDialog.h	/^    ~ConnectionInfoDialog();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+Controller	./client/Controller.h	/^    Controller( Model* model_ );$/;"	p	class:Controller	access:public	signature:( Model* model_ )
+Controller	./client/Controller.h	/^class Controller: public QWidget$/;"	c	inherits:QWidget
+Controller::Controller	./client/Controller.h	/^    Controller( Model* model_ );$/;"	p	class:Controller	access:public	signature:( Model* model_ )
+Controller::checkError	./client/Controller.h	/^    bool checkError(const QString&,const QString&);$/;"	p	class:Controller	access:private	signature:(const QString&,const QString&)
+Controller::clearFields	./client/Controller.h	/^    void clearFields();$/;"	p	class:Controller	access:public	signature:()
+Controller::client	./client/Controller.h	/^    QTcpSocket* client;$/;"	m	class:Controller	access:private
+Controller::connectionError	./client/Controller.h	/^    bool connectionError;$/;"	m	class:Controller	access:private
+Controller::emitError	./client/Controller.h	/^    void emitError(GameErrorMessage error);$/;"	p	class:Controller	access:private	signature:(GameErrorMessage error)
+Controller::gameError	./client/Controller.h	/^    void gameError( GameErrorMessage message );$/;"	p	class:Controller	access:public	signature:( GameErrorMessage message )
+Controller::gameOpponent	./client/Controller.h	/^    void gameOpponent( const QString& name );$/;"	p	class:Controller	access:public	signature:( const QString& name )
+Controller::gameResult	./client/Controller.h	/^    void gameResult( GameResult result );$/;"	p	class:Controller	access:public	signature:( GameResult result )
+Controller::getServerAddress	./client/Controller.h	/^    QString getServerAddress() const;$/;"	p	class:Controller	access:public	signature:() const
+Controller::getServerPort	./client/Controller.h	/^    quint16 getServerPort() const;$/;"	p	class:Controller	access:public	signature:() const
+Controller::getState	./client/Controller.h	/^    State getState() const;$/;"	p	class:Controller	access:public	signature:() const
+Controller::getUserLogin	./client/Controller.h	/^    QString getUserLogin() const;$/;"	p	class:Controller	access:public	signature:() const
+Controller::getUserPassword	./client/Controller.h	/^    QString getUserPassword() const;$/;"	p	class:Controller	access:public	signature:() const
+Controller::hitSound	./client/Controller.h	/^    PlaySound* hitSound;$/;"	m	class:Controller	access:private
+Controller::markEnemyPoint	./client/Controller.h	/^    void markEnemyPoint( int x, int y, Cell cell );$/;"	p	class:Controller	access:private	signature:( int x, int y, Cell cell )
+Controller::markShip	./client/Controller.h	/^    void markShip( int x, int y, Cell cell, bool atEnemyField = false );$/;"	p	class:Controller	access:private	signature:( int x, int y, Cell cell, bool atEnemyField = false )
+Controller::missSound	./client/Controller.h	/^    PlaySound* missSound;$/;"	m	class:Controller	access:private
+Controller::model	./client/Controller.h	/^    Model* model;$/;"	m	class:Controller	access:private
+Controller::onConnected	./client/Controller.h	/^    void onConnected();$/;"	p	class:Controller	access:private	signature:()
+Controller::onDataReceived	./client/Controller.h	/^    void onDataReceived();$/;"	p	class:Controller	access:private	signature:()
+Controller::onError	./client/Controller.h	/^    void onError( QAbstractSocket::SocketError socketError );$/;"	p	class:Controller	access:private	signature:( QAbstractSocket::SocketError socketError )
+Controller::onGameQuit	./client/Controller.h	/^    void onGameQuit();$/;"	p	class:Controller	access:public	signature:()
+Controller::onGameStart	./client/Controller.h	/^    void onGameStart();$/;"	p	class:Controller	access:public	signature:()
+Controller::onMousePressed	./client/Controller.h	/^    void onMousePressed( const QPoint& position, bool setShip = true );$/;"	p	class:Controller	access:public	signature:( const QPoint& position, bool setShip = true )
+Controller::parseData	./client/Controller.h	/^    void parseData( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseErrorInfo	./client/Controller.h	/^    bool parseErrorInfo( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseFields	./client/Controller.h	/^    bool parseFields( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseFound	./client/Controller.h	/^    bool parseFound( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseGameResult	./client/Controller.h	/^    bool parseGameResult( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseGo	./client/Controller.h	/^    bool parseGo( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parsePing	./client/Controller.h	/^    bool parsePing( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseWrongField	./client/Controller.h	/^    bool parseWrongField( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::parseWrongStep	./client/Controller.h	/^    bool parseWrongStep( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+Controller::placeShipAtRandom	./client/Controller.h	/^    void placeShipAtRandom( int size );$/;"	p	class:Controller	access:private	signature:( int size )
+Controller::randomField	./client/Controller.h	/^    void randomField();$/;"	p	class:Controller	access:public	signature:()
+Controller::readConfig	./client/Controller.h	/^    void readConfig();$/;"	p	class:Controller	access:private	signature:()
+Controller::saveConfig	./client/Controller.h	/^    void saveConfig();$/;"	p	class:Controller	access:private	signature:()
+Controller::serverAddress	./client/Controller.h	/^    QHostAddress serverAddress;$/;"	m	class:Controller	access:private
+Controller::serverPort	./client/Controller.h	/^    quint16 serverPort;$/;"	m	class:Controller	access:private
+Controller::setConnectionInfo	./client/Controller.h	/^    void setConnectionInfo($/;"	p	class:Controller	access:public	signature:( const QString& address, quint16 port, const QString& login, const QString& password )
+Controller::stateChanged	./client/Controller.h	/^    void stateChanged();$/;"	p	class:Controller	access:public	signature:()
+Controller::~Controller	./client/Controller.h	/^    ~Controller();$/;"	p	class:Controller	access:public	signature:()
+DEFAULT_AUTH_FILE	./server/Constants.h	/^const QString DEFAULT_AUTH_FILE = "authorized";$/;"	v
+DEFAULT_GUEST_ACCOUNT	./server/Constants.h	/^const QString DEFAULT_GUEST_ACCOUNT = "guest";$/;"	v
+DEFAULT_INACTIVE_MAX	./server/Constants.h	/^const quint16 DEFAULT_INACTIVE_MAX = 65;$/;"	v
+DEFAULT_INACTIVE_MIN	./server/Constants.h	/^const quint16 DEFAULT_INACTIVE_MIN = 30;$/;"	v
+DEFAULT_SEARCH_INTERVAL	./server/Constants.h	/^const quint16 DEFAULT_SEARCH_INTERVAL = 3000;$/;"	v
+DEFAULT_SERVER_ADDRESS	./server/Constants.h	/^const QHostAddress DEFAULT_SERVER_ADDRESS = QHostAddress::Any;$/;"	v
+DEFAULT_SERVER_PORT	./server/Constants.h	/^const quint16 DEFAULT_SERVER_PORT = 1234;$/;"	v
+DEFAULT_SHIP_SIZE	./server/Constants.h	/^const quint16 DEFAULT_SHIP_SIZE = 4;$/;"	v
+DEFAULT_STAT_FILE	./server/Constants.h	/^const QString DEFAULT_STAT_FILE = "stats";$/;"	v
+ENEMYFIELD_X	./client/Defines.h	/^const int ENEMYFIELD_X = 322;$/;"	v
+ENEMYFIELD_Y	./client/Defines.h	/^const int ENEMYFIELD_Y = 39;$/;"	v
+FIELD_HEIGHT	./client/Defines.h	/^const int FIELD_HEIGHT = 217;$/;"	v
+FIELD_WIDTH	./client/Defines.h	/^const int FIELD_WIDTH = 216;$/;"	v
+Field	./client/Field.h	/^    Field();$/;"	p	class:Field	access:public	signature:()
+Field	./client/Field.h	/^class Field$/;"	c
+Field	./server/Field.h	/^    Field( int shipSize = DEFAULT_SHIP_SIZE );$/;"	p	class:Field	access:public	signature:( int shipSize = DEFAULT_SHIP_SIZE )
+Field	./server/Field.h	/^class Field$/;"	c
+Field::CI_BOTTOM	./server/Field.h	/^        CI_BOTTOM,$/;"	e	enum:Field::Cell
+Field::CI_CENTER	./server/Field.h	/^        CI_CENTER,$/;"	e	enum:Field::Cell
+Field::CI_CLEAR	./server/Field.h	/^        CI_CLEAR = 0,$/;"	e	enum:Field::Cell
+Field::CI_DAMAGED	./server/Field.h	/^        CI_DAMAGED$/;"	e	enum:Field::Cell
+Field::CI_DOT	./server/Field.h	/^        CI_DOT = 100,$/;"	e	enum:Field::Cell
+Field::CI_HMIDDLE	./server/Field.h	/^        CI_HMIDDLE,$/;"	e	enum:Field::Cell
+Field::CI_LEFT	./server/Field.h	/^        CI_LEFT,$/;"	e	enum:Field::Cell
+Field::CI_RIGHT	./server/Field.h	/^        CI_RIGHT,$/;"	e	enum:Field::Cell
+Field::CI_TOP	./server/Field.h	/^        CI_TOP,$/;"	e	enum:Field::Cell
+Field::CI_VMIDDLE	./server/Field.h	/^        CI_VMIDDLE,$/;"	e	enum:Field::Cell
+Field::Cell	./server/Field.h	/^    enum Cell$/;"	g	class:Field	access:public
+Field::CellShipsTypeCount	./server/Field.h	/^        CellShipsTypeCount,$/;"	e	enum:Field::Cell
+Field::Cells	./server/Field.h	/^    typedef QVector<Cell> Cells;$/;"	t	class:Field	access:public
+Field::Field	./client/Field.h	/^    Field();$/;"	p	class:Field	access:public	signature:()
+Field::Field	./server/Field.h	/^    Field( int shipSize = DEFAULT_SHIP_SIZE );$/;"	p	class:Field	access:public	signature:( int shipSize = DEFAULT_SHIP_SIZE )
+Field::ShipsTypeList	./server/Field.h	/^    typedef QVector<int> ShipsTypeList;$/;"	t	class:Field	access:public
+Field::Shots	./server/Field.h	/^    typedef QStack<QPoint> Shots;$/;"	t	class:Field	access:public
+Field::addKilledShip	./server/Field.h	/^    void addKilledShip( int shipSize );$/;"	p	class:Field	access:public	signature:( int shipSize )
+Field::checkField	./server/Field.h	/^    bool checkField() const;$/;"	p	class:Field	access:public	signature:() const
+Field::clear	./client/Field.h	/^    void clear();$/;"	p	class:Field	access:public	signature:()
+Field::convertField	./server/Field.h	/^    void convertField();$/;"	p	class:Field	access:private	signature:()
+Field::field	./client/Field.h	/^    QVector<Cell> field;$/;"	m	class:Field	access:private
+Field::fieldLength_	./server/Field.h	/^    int fieldLength_;$/;"	m	class:Field	access:private
+Field::field_	./server/Field.h	/^    Cells field_;$/;"	m	class:Field	access:private
+Field::getCell	./client/Field.h	/^    Cell getCell( int x, int y );$/;"	p	class:Field	access:public	signature:( int x, int y )
+Field::getCell	./server/Field.h	/^    Cell getCell( int x, int y ) const;$/;"	p	class:Field	access:public	signature:( int x, int y ) const
+Field::getCellPrivate	./server/Field.h	/^    Cell getCellPrivate( int x, int y, const Cells& cells ) const;$/;"	p	class:Field	access:private	signature:( int x, int y, const Cells& cells ) const
+Field::getField	./client/Field.h	/^    QString getField();$/;"	p	class:Field	access:public	signature:()
+Field::getFieldLength	./server/Field.h	/^    quint32 getFieldLength() const;$/;"	p	class:Field	access:public	signature:() const
+Field::getFieldSize	./server/Field.h	/^    quint32 getFieldSize() const;$/;"	p	class:Field	access:public	signature:() const
+Field::getShipSize	./server/Field.h	/^    quint32 getShipSize() const;$/;"	p	class:Field	access:public	signature:() const
+Field::getShipsCount	./server/Field.h	/^    quint32 getShipsCount() const;$/;"	p	class:Field	access:public	signature:() const
+Field::initField	./server/Field.h	/^    void initField( const QString& stringField );$/;"	p	class:Field	access:public	signature:( const QString& stringField )
+Field::isAllKilled	./server/Field.h	/^    bool isAllKilled() const;$/;"	p	class:Field	access:public	signature:() const
+Field::killedShips_	./server/Field.h	/^    ShipsTypeList killedShips_;$/;"	m	class:Field	access:private
+Field::makeShot	./server/Field.h	/^    bool makeShot( int x, int y, Shots& killShots );$/;"	p	class:Field	access:public	signature:( int x, int y, Shots& killShots )
+Field::setCell	./client/Field.h	/^    void setCell( int x, int y, Cell cell );$/;"	p	class:Field	access:public	signature:( int x, int y, Cell cell )
+Field::setCell	./server/Field.h	/^    void setCell( int x, int y, Cell cell );$/;"	p	class:Field	access:public	signature:( int x, int y, Cell cell )
+Field::setCellPrivate	./server/Field.h	/^    void setCellPrivate( int x, int y, Cell cell, Cells& cells ) const;$/;"	p	class:Field	access:private	signature:( int x, int y, Cell cell, Cells& cells ) const
+Field::shipSize_	./server/Field.h	/^    int shipSize_;$/;"	m	class:Field	access:private
+Field::showField	./server/Field.h	/^    void showField() const;$/;"	p	class:Field	access:public	signature:() const
+Field::~Field	./client/Field.h	/^    ~Field();$/;"	p	class:Field	access:public	signature:()
+GEM_ALREADY_CONNECTED	./client/Controller.h	/^    GEM_ALREADY_CONNECTED,$/;"	e	enum:GameErrorMessage
+GEM_NONE	./client/Controller.h	/^    GEM_NONE = 0,$/;"	e	enum:GameErrorMessage
+GEM_SERVER_CONNECTION_REFUSED	./client/Controller.h	/^    GEM_SERVER_CONNECTION_REFUSED,$/;"	e	enum:GameErrorMessage
+GEM_SERVER_CONNECTION_TIMEOUT	./client/Controller.h	/^    GEM_SERVER_CONNECTION_TIMEOUT,$/;"	e	enum:GameErrorMessage
+GEM_SERVER_ERROR	./client/Controller.h	/^    GEM_SERVER_ERROR,$/;"	e	enum:GameErrorMessage
+GEM_SERVER_UNAVAILABLE	./client/Controller.h	/^    GEM_SERVER_UNAVAILABLE$/;"	e	enum:GameErrorMessage
+GEM_UNKNOWN	./client/Controller.h	/^    GEM_UNKNOWN = -1,$/;"	e	enum:GameErrorMessage
+GEM_WRONG_FIELD	./client/Controller.h	/^    GEM_WRONG_FIELD,$/;"	e	enum:GameErrorMessage
+GEM_WRONG_USER	./client/Controller.h	/^    GEM_WRONG_USER,$/;"	e	enum:GameErrorMessage
+GR_LOST	./client/Controller.h	/^    GR_LOST = -1$/;"	e	enum:GameResult
+GR_NONE	./client/Controller.h	/^    GR_NONE = 0,$/;"	e	enum:GameResult
+GR_WON	./client/Controller.h	/^    GR_WON = 1,$/;"	e	enum:GameResult
+GameErrorMessage	./client/Controller.h	/^enum GameErrorMessage$/;"	g
+GameResult	./client/Controller.h	/^enum GameResult$/;"	g
+Images	./client/Images.h	/^    Images();$/;"	p	class:Images	access:public	signature:()
+Images	./client/Images.h	/^class Images$/;"	c
+Images::Images	./client/Images.h	/^    Images();$/;"	p	class:Images	access:public	signature:()
+Images::get	./client/Images.h	/^    QImage& get( const QString& imgName );$/;"	p	class:Images	access:public	signature:( const QString& imgName )
+Images::images	./client/Images.h	/^    QMap<QString, QImage> images;$/;"	m	class:Images	access:private
+Images::isLoaded	./client/Images.h	/^    bool isLoaded();$/;"	p	class:Images	access:public	signature:()
+Images::isLoaded_	./client/Images.h	/^    bool isLoaded_;$/;"	m	class:Images	access:private
+Images::load	./client/Images.h	/^    void load();$/;"	p	class:Images	access:public	signature:()
+LOGIN_LENGTH_MAX	./server/Constants.h	/^const quint16 LOGIN_LENGTH_MAX = 16;$/;"	v
+LOGIN_LENGTH_MIN	./server/Constants.h	/^const quint16 LOGIN_LENGTH_MIN = 2;$/;"	v
+MAINWINDOW_H	./client/mainwindow.h	2;"	d
+MYFIELD_X	./client/Defines.h	/^const int MYFIELD_X = 40;$/;"	v
+MYFIELD_Y	./client/Defines.h	/^const int MYFIELD_Y = 39;$/;"	v
+MainWindow	./client/mainwindow.h	/^    explicit MainWindow( QWidget* parent = 0 );$/;"	p	class:MainWindow	access:public	signature:( QWidget* parent = 0 )
+MainWindow	./client/mainwindow.h	/^class MainWindow : public QMainWindow$/;"	c	inherits:QMainWindow
+MainWindow	./client/ui_mainwindow.h	/^    class MainWindow: public Ui_MainWindow {};$/;"	c	namespace:Ui	inherits:Ui_MainWindow
+MainWindow::MainWindow	./client/mainwindow.h	/^    explicit MainWindow( QWidget* parent = 0 );$/;"	p	class:MainWindow	access:public	signature:( QWidget* parent = 0 )
+MainWindow::changeGameOpponent	./client/mainwindow.h	/^    void changeGameOpponent( const QString& name );$/;"	p	class:MainWindow	access:private	signature:( const QString& name )
+MainWindow::closeEvent	./client/mainwindow.h	/^    void closeEvent( QCloseEvent* event );$/;"	p	class:MainWindow	access:protected	signature:( QCloseEvent* event )
+MainWindow::controller	./client/mainwindow.h	/^    Controller* controller;$/;"	m	class:MainWindow	access:private
+MainWindow::enemyFieldImage	./client/mainwindow.h	/^    QImage enemyFieldImage();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::getFieldImage	./client/mainwindow.h	/^    QImage getFieldImage( char );$/;"	p	class:MainWindow	access:private	signature:( char )
+MainWindow::model	./client/mainwindow.h	/^    Model* model;$/;"	m	class:MainWindow	access:private
+MainWindow::mousePressEvent	./client/mainwindow.h	/^    void mousePressEvent( QMouseEvent* ev );$/;"	p	class:MainWindow	access:protected	signature:( QMouseEvent* ev )
+MainWindow::myFieldImage	./client/mainwindow.h	/^    QImage myFieldImage();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionAbout_triggered	./client/mainwindow.h	/^    void on_actionAbout_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionClear_triggered	./client/mainwindow.h	/^    void on_actionClear_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionLeave_activated	./client/mainwindow.h	/^    void on_actionLeave_activated();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionQuit_triggered	./client/mainwindow.h	/^    void on_actionQuit_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionRandom_triggered	./client/mainwindow.h	/^    void on_actionRandom_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::on_actionStart_activated	./client/mainwindow.h	/^    void on_actionStart_activated();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::paintEvent	./client/mainwindow.h	/^    void paintEvent( QPaintEvent* event );$/;"	p	class:MainWindow	access:protected	signature:( QPaintEvent* event )
+MainWindow::redraw	./client/mainwindow.h	/^    void redraw();$/;"	p	class:MainWindow	access:private	signature:()
+MainWindow::setStatus	./client/mainwindow.h	/^    void setStatus( const QString& status );$/;"	p	class:MainWindow	access:private	signature:( const QString& status )
+MainWindow::showGameError	./client/mainwindow.h	/^    void showGameError( GameErrorMessage message );$/;"	p	class:MainWindow	access:private	signature:( GameErrorMessage message )
+MainWindow::showGameResult	./client/mainwindow.h	/^    void showGameResult( GameResult result );$/;"	p	class:MainWindow	access:private	signature:( GameResult result )
+MainWindow::state	./client/mainwindow.h	/^    State state;$/;"	m	class:MainWindow	access:private
+MainWindow::ui	./client/mainwindow.h	/^    Ui::MainWindow* ui;$/;"	m	class:MainWindow	access:private
+MainWindow::~MainWindow	./client/mainwindow.h	/^    ~MainWindow();$/;"	p	class:MainWindow	access:public	signature:()
+Model	./client/Model.h	/^    Model();$/;"	p	class:Model	access:public	signature:()
+Model	./client/Model.h	/^class Model: public QObject$/;"	c	inherits:QObject
+Model::Model	./client/Model.h	/^    Model();$/;"	p	class:Model	access:public	signature:()
+Model::checkMyField	./client/Model.h	/^    bool checkMyField() const;$/;"	p	class:Model	access:public	signature:() const
+Model::clearEnemyField	./client/Model.h	/^    void clearEnemyField();$/;"	p	class:Model	access:public	signature:()
+Model::clearMyField	./client/Model.h	/^    void clearMyField();$/;"	p	class:Model	access:public	signature:()
+Model::enemyField	./client/Model.h	/^    Field* myField, *enemyField;$/;"	m	class:Model	access:private
+Model::getEnemyCell	./client/Model.h	/^    Cell getEnemyCell( int x, int y ) const;$/;"	p	class:Model	access:public	signature:( int x, int y ) const
+Model::getEnemyField	./client/Model.h	/^    QString getEnemyField() const;$/;"	p	class:Model	access:public	signature:() const
+Model::getLogin	./client/Model.h	/^    QString getLogin() const;$/;"	p	class:Model	access:public	signature:() const
+Model::getMyCell	./client/Model.h	/^    Cell getMyCell( int x, int y ) const;$/;"	p	class:Model	access:public	signature:( int x, int y ) const
+Model::getMyField	./client/Model.h	/^    QString getMyField() const;$/;"	p	class:Model	access:public	signature:() const
+Model::getPassword	./client/Model.h	/^    QString getPassword() const;$/;"	p	class:Model	access:public	signature:() const
+Model::getState	./client/Model.h	/^    State getState() const;$/;"	p	class:Model	access:public	signature:() const
+Model::isShip	./client/Model.h	/^    bool isShip( int size, int x, int y ) const;$/;"	p	class:Model	access:private	signature:( int size, int x, int y ) const
+Model::login	./client/Model.h	/^    QString login, pass;$/;"	m	class:Model	access:private
+Model::myField	./client/Model.h	/^    Field* myField, *enemyField;$/;"	m	class:Model	access:private
+Model::pass	./client/Model.h	/^    QString login, pass;$/;"	m	class:Model	access:private
+Model::setEnemyCell	./client/Model.h	/^    void setEnemyCell( int x, int y, Cell cell );$/;"	p	class:Model	access:public	signature:( int x, int y, Cell cell )
+Model::setLogin	./client/Model.h	/^    void setLogin( const QString& str );$/;"	p	class:Model	access:public	signature:( const QString& str )
+Model::setMyCell	./client/Model.h	/^    void setMyCell( int x, int y, Cell cell );$/;"	p	class:Model	access:public	signature:( int x, int y, Cell cell )
+Model::setPassword	./client/Model.h	/^    void setPassword( const QString& str );$/;"	p	class:Model	access:public	signature:( const QString& str )
+Model::setState	./client/Model.h	/^    void setState( State );$/;"	p	class:Model	access:public	signature:( State )
+Model::shipNum	./client/Model.h	/^    int shipNum( int size ) const;$/;"	p	class:Model	access:private	signature:( int size ) const
+Model::state	./client/Model.h	/^    State state;$/;"	m	class:Model	access:private
+Model::~Model	./client/Model.h	/^    ~Model();$/;"	p	class:Model	access:public	signature:()
+PASSWORD_LENGTH_MAX	./server/Constants.h	/^const quint16 PASSWORD_LENGTH_MAX = 32;$/;"	v
+PASSWORD_LENGTH_MIN	./server/Constants.h	/^const quint16 PASSWORD_LENGTH_MIN = 4;$/;"	v
+PV_ALPHA	./server/Server.h	/^        PV_ALPHA = 1,$/;"	e	enum:Server::ProtocolVersion
+PV_BETA	./server/Server.h	/^        PV_BETA,$/;"	e	enum:Server::ProtocolVersion
+PV_RELEASE	./server/Server.h	/^        PV_RELEASE$/;"	e	enum:Server::ProtocolVersion
+PlaySound	./client/util/PlaySound.h	/^    explicit PlaySound( QObject* parent = 0 );$/;"	p	class:PlaySound	access:public	signature:( QObject* parent = 0 )
+PlaySound	./client/util/PlaySound.h	/^    explicit PlaySound( const QString& fileName, QObject* parent = 0 );$/;"	p	class:PlaySound	access:public	signature:( const QString& fileName, QObject* parent = 0 )
+PlaySound	./client/util/PlaySound.h	/^class PlaySound : public QObject$/;"	c	inherits:QObject
+PlaySound::PlaySound	./client/util/PlaySound.h	/^    explicit PlaySound( QObject* parent = 0 );$/;"	p	class:PlaySound	access:public	signature:( QObject* parent = 0 )
+PlaySound::PlaySound	./client/util/PlaySound.h	/^    explicit PlaySound( const QString& fileName, QObject* parent = 0 );$/;"	p	class:PlaySound	access:public	signature:( const QString& fileName, QObject* parent = 0 )
+PlaySound::play	./client/util/PlaySound.h	/^    void play( const QString& fileName );$/;"	p	class:PlaySound	access:public	signature:( const QString& fileName )
+PlaySound::play	./client/util/PlaySound.h	/^    void play();$/;"	p	class:PlaySound	access:public	signature:()
+PlaySound::soundThread_	./client/util/PlaySound.h	/^    PlaySoundSpace::PlaySoundThread* soundThread_;$/;"	m	class:PlaySound	access:private
+PlaySound::stop	./client/util/PlaySound.h	/^    void stop();$/;"	p	class:PlaySound	access:public	signature:()
+PlaySound::~PlaySound	./client/util/PlaySound.h	/^    ~PlaySound();$/;"	p	class:PlaySound	access:public	signature:()
+PlaySoundSpace	./client/util/PlaySound.h	/^namespace PlaySoundSpace$/;"	n
+PlaySoundSpace	./client/util/PlaySound_nix.h	/^namespace PlaySoundSpace$/;"	n
+PlaySoundSpace	./client/util/PlaySound_win.h	/^namespace PlaySoundSpace$/;"	n
+PlaySoundSpace::PlaySoundThread	./client/util/PlaySound_nix.h	/^class PlaySoundThread : public QThread$/;"	c	namespace:PlaySoundSpace	inherits:QThread
+PlaySoundSpace::PlaySoundThread	./client/util/PlaySound_win.h	/^class PlaySoundThread : public QThread$/;"	c	namespace:PlaySoundSpace	inherits:QThread
+PlaySoundSpace::PlaySoundThread::PlaySoundThread	./client/util/PlaySound_nix.h	/^    explicit PlaySoundThread( QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( QObject* parent = 0 )
+PlaySoundSpace::PlaySoundThread::PlaySoundThread	./client/util/PlaySound_nix.h	/^    explicit PlaySoundThread( const QString& filename, QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename, QObject* parent = 0 )
+PlaySoundSpace::PlaySoundThread::PlaySoundThread	./client/util/PlaySound_win.h	/^    explicit PlaySoundThread( QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( QObject* parent = 0 )
+PlaySoundSpace::PlaySoundThread::PlaySoundThread	./client/util/PlaySound_win.h	/^    explicit PlaySoundThread( const QString& filename, QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename, QObject* parent = 0 )
+PlaySoundSpace::PlaySoundThread::aboutToQuit	./client/util/PlaySound_nix.h	/^    bool aboutToQuit;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::bits_per_frame	./client/util/PlaySound_nix.h	/^    size_t bits_per_frame;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::bits_per_sample	./client/util/PlaySound_nix.h	/^    size_t bits_per_sample;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::buffer_size	./client/util/PlaySound_nix.h	/^    snd_pcm_uframes_t buffer_size;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::chunk_bytes	./client/util/PlaySound_nix.h	/^    size_t chunk_bytes;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::chunk_size	./client/util/PlaySound_nix.h	/^    snd_pcm_uframes_t chunk_size;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::copyFromResource	./client/util/PlaySound_win.h	/^    bool copyFromResource( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+PlaySoundSpace::PlaySoundThread::datastart	./client/util/PlaySound_nix.h	/^    u_long datastart;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::frames	./client/util/PlaySound_nix.h	/^    snd_pcm_sframes_t frames;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::handle	./client/util/PlaySound_nix.h	/^    snd_pcm_t* handle;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::initSound	./client/util/PlaySound_nix.h	/^    bool initSound( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+PlaySoundSpace::PlaySoundThread::initSound	./client/util/PlaySound_win.h	/^    bool initSound( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+PlaySoundSpace::PlaySoundThread::quit	./client/util/PlaySound_nix.h	/^    void quit();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::PlaySoundThread::quit	./client/util/PlaySound_win.h	/^    void quit();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::PlaySoundThread::run	./client/util/PlaySound_nix.h	/^    void run();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::PlaySoundThread::run	./client/util/PlaySound_win.h	/^    void run();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::PlaySoundThread::samples	./client/util/PlaySound_nix.h	/^    u_long samples;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::setSoundFile	./client/util/PlaySound_nix.h	/^    void setSoundFile( const QString& filename );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename )
+PlaySoundSpace::PlaySoundThread::setSoundFile	./client/util/PlaySound_win.h	/^    void setSoundFile( const QString& filename );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename )
+PlaySoundSpace::PlaySoundThread::sf	./client/util/PlaySound_nix.h	/^    QFile sf;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::soundFile	./client/util/PlaySound_nix.h	/^    const QString& soundFile() const;$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:() const
+PlaySoundSpace::PlaySoundThread::soundFile	./client/util/PlaySound_win.h	/^    const QString& soundFile() const;$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:() const
+PlaySoundSpace::PlaySoundThread::soundFileName_	./client/util/PlaySound_nix.h	/^    QString soundFileName_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::soundFileName_	./client/util/PlaySound_win.h	/^    QString soundFileName_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::soundInited	./client/util/PlaySound_nix.h	/^    bool soundInited;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::sound_	./client/util/PlaySound_win.h	/^    QSound* sound_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::terminate	./client/util/PlaySound_nix.h	/^    void terminate();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::PlaySoundThread::tmpFile_	./client/util/PlaySound_win.h	/^    QTemporaryFile* tmpFile_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::waveformat	./client/util/PlaySound_nix.h	/^    WAVEFORMAT waveformat;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+PlaySoundSpace::PlaySoundThread::~PlaySoundThread	./client/util/PlaySound_nix.h	/^    ~PlaySoundThread();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+PlaySoundSpace::WAVEFORMAT	./client/util/PlaySound_nix.h	/^} WAVEFORMAT;$/;"	t	namespace:PlaySoundSpace	typeref:struct:PlaySoundSpace::__anon1
+PlaySoundSpace::__anon1::dwAvgBytesPerSec	./client/util/PlaySound_nix.h	/^    u_int32_t dwAvgBytesPerSec;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::dwSamplesPerSec	./client/util/PlaySound_nix.h	/^    u_int32_t dwSamplesPerSec;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::dwSize	./client/util/PlaySound_nix.h	/^    u_int32_t dwSize;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::wBitsPerSample	./client/util/PlaySound_nix.h	/^    u_int16_t wBitsPerSample;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::wBlockAlign	./client/util/PlaySound_nix.h	/^    u_int16_t wBlockAlign;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::wChannels	./client/util/PlaySound_nix.h	/^    u_int16_t wChannels;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundSpace::__anon1::wFormatTag	./client/util/PlaySound_nix.h	/^    u_int16_t wFormatTag;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+PlaySoundThread	./client/util/PlaySound_nix.h	/^    explicit PlaySoundThread( QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( QObject* parent = 0 )
+PlaySoundThread	./client/util/PlaySound_nix.h	/^    explicit PlaySoundThread( const QString& filename, QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename, QObject* parent = 0 )
+PlaySoundThread	./client/util/PlaySound_nix.h	/^class PlaySoundThread : public QThread$/;"	c	namespace:PlaySoundSpace	inherits:QThread
+PlaySoundThread	./client/util/PlaySound_win.h	/^    explicit PlaySoundThread( QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( QObject* parent = 0 )
+PlaySoundThread	./client/util/PlaySound_win.h	/^    explicit PlaySoundThread( const QString& filename, QObject* parent = 0 );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename, QObject* parent = 0 )
+PlaySoundThread	./client/util/PlaySound_win.h	/^class PlaySoundThread : public QThread$/;"	c	namespace:PlaySoundSpace	inherits:QThread
+PlayerStats	./server/Statistics.h	/^struct PlayerStats$/;"	s
+PlayerStats::roundsLost	./server/Statistics.h	/^    int roundsLost;$/;"	m	struct:PlayerStats	access:public
+PlayerStats::roundsWon	./server/Statistics.h	/^    int roundsWon;$/;"	m	struct:PlayerStats	access:public
+ProtocolVersion	./server/Server.h	/^    enum ProtocolVersion$/;"	g	class:Server	access:public
+ST_AUTHORIZED	./server/Client.h	/^        ST_AUTHORIZED,$/;"	e	enum:Client::ClientStatus
+ST_CONNECTED	./server/Client.h	/^        ST_CONNECTED = 0,$/;"	e	enum:Client::ClientStatus
+ST_DISCONNECTED	./server/Client.h	/^        ST_DISCONNECTED$/;"	e	enum:Client::ClientStatus
+ST_MAKING_STEP	./client/Model.h	/^    ST_MAKING_STEP$/;"	e	enum:State
+ST_MAKING_STEP	./server/Client.h	/^        ST_MAKING_STEP,$/;"	e	enum:Client::ClientStatus
+ST_PLACING_SHIPS	./client/Model.h	/^    ST_PLACING_SHIPS,$/;"	e	enum:State
+ST_READY	./server/Client.h	/^        ST_READY,$/;"	e	enum:Client::ClientStatus
+ST_WAITING_STEP	./client/Model.h	/^    ST_WAITING_STEP,$/;"	e	enum:State
+ST_WAITING_STEP	./server/Client.h	/^        ST_WAITING_STEP,$/;"	e	enum:Client::ClientStatus
+Server	./server/Server.h	/^    explicit Server( QObject* parent = 0 );$/;"	p	class:Server	access:public	signature:( QObject* parent = 0 )
+Server	./server/Server.h	/^class Server : public QObject$/;"	c	inherits:QObject
+Server::CUS_NOTFOUND	./server/Server.h	/^        CUS_NOTFOUND = -1,$/;"	e	enum:Server::CheckUserStatus
+Server::CUS_OK	./server/Server.h	/^        CUS_OK = 0,$/;"	e	enum:Server::CheckUserStatus
+Server::CUS_WRONGPASS	./server/Server.h	/^        CUS_WRONGPASS = 1$/;"	e	enum:Server::CheckUserStatus
+Server::CheckUserStatus	./server/Server.h	/^    enum CheckUserStatus$/;"	g	class:Server	access:public
+Server::PV_ALPHA	./server/Server.h	/^        PV_ALPHA = 1,$/;"	e	enum:Server::ProtocolVersion
+Server::PV_BETA	./server/Server.h	/^        PV_BETA,$/;"	e	enum:Server::ProtocolVersion
+Server::PV_RELEASE	./server/Server.h	/^        PV_RELEASE$/;"	e	enum:Server::ProtocolVersion
+Server::ProtocolVersion	./server/Server.h	/^    enum ProtocolVersion$/;"	g	class:Server	access:public
+Server::Server	./server/Server.h	/^    explicit Server( QObject* parent = 0 );$/;"	p	class:Server	access:public	signature:( QObject* parent = 0 )
+Server::address	./server/Server.h	/^    QString address() const;$/;"	p	class:Server	access:public	signature:() const
+Server::address	./server/Server.h	/^    void address( QHostAddress& addr ) const;$/;"	p	class:Server	access:public	signature:( QHostAddress& addr ) const
+Server::address_	./server/Server.h	/^    QHostAddress address_;$/;"	m	class:Server	access:private
+Server::authFile	./server/Server.h	/^    const QString& authFile() const;$/;"	p	class:Server	access:public	signature:() const
+Server::authFile_	./server/Server.h	/^    QString authFile_;$/;"	m	class:Server	access:private
+Server::checkProtocolVersion	./server/Server.h	/^    bool checkProtocolVersion( int version );$/;"	p	class:Server	access:private	signature:( int version )
+Server::checkUserLogin	./server/Server.h	/^    CheckUserStatus checkUserLogin($/;"	p	class:Server	access:private	signature:( const QString& login, const QString& password )
+Server::clients_	./server/Server.h	/^    Clients clients_;$/;"	m	class:Server	access:private
+Server::connectTwoClients	./server/Server.h	/^    void connectTwoClients($/;"	p	class:Server	access:private	signature:( Clients::iterator client1, Clients::iterator client2 )
+Server::disconnectClient	./server/Server.h	/^    void disconnectClient( ClientsIterator client );$/;"	p	class:Server	access:private	signature:( ClientsIterator client )
+Server::disconnectClientAndRecord	./server/Server.h	/^    void disconnectClientAndRecord( ClientsIterator client, bool winnerStatus );$/;"	p	class:Server	access:private	signature:( ClientsIterator client, bool winnerStatus )
+Server::guestAllowed_	./server/Server.h	/^    bool guestAllowed_;$/;"	m	class:Server	access:private
+Server::isGuestAllowed	./server/Server.h	/^    bool isGuestAllowed() const;$/;"	p	class:Server	access:public	signature:() const
+Server::isRegistrationAllowed	./server/Server.h	/^    bool isRegistrationAllowed() const;$/;"	p	class:Server	access:public	signature:() const
+Server::isUserConnected	./server/Server.h	/^    bool isUserConnected(const QString& cmd);$/;"	p	class:Server	access:private	signature:(const QString& cmd)
+Server::on_newUserConnected	./server/Server.h	/^    void on_newUserConnected();$/;"	p	class:Server	access:private	signature:()
+Server::on_recievedData	./server/Server.h	/^    void on_recievedData();$/;"	p	class:Server	access:private	signature:()
+Server::parseData	./server/Server.h	/^    void parseData( const QString& cmd, int clientId );$/;"	p	class:Server	access:private	signature:( const QString& cmd, int clientId )
+Server::port	./server/Server.h	/^    int port() const;$/;"	p	class:Server	access:public	signature:() const
+Server::port_	./server/Server.h	/^    quint16 port_;$/;"	m	class:Server	access:private
+Server::recordSessionStatistic	./server/Server.h	/^    void recordSessionStatistic($/;"	p	class:Server	access:private	signature:( const QString& winner, const QString& looser )
+Server::registerUserLogin	./server/Server.h	/^    bool registerUserLogin( const QString& login, const QString& password );$/;"	p	class:Server	access:private	signature:( const QString& login, const QString& password )
+Server::registrationAllowed_	./server/Server.h	/^    bool registrationAllowed_;$/;"	m	class:Server	access:private
+Server::setAddress	./server/Server.h	/^    void setAddress( const QString& address );$/;"	p	class:Server	access:public	signature:( const QString& address )
+Server::setAuthFile	./server/Server.h	/^    void setAuthFile( const QString& filename );$/;"	p	class:Server	access:public	signature:( const QString& filename )
+Server::setGuestAllowed	./server/Server.h	/^    void setGuestAllowed( bool state );$/;"	p	class:Server	access:public	signature:( bool state )
+Server::setPort	./server/Server.h	/^    void setPort( quint16 port );$/;"	p	class:Server	access:public	signature:( quint16 port )
+Server::setRegistrationAllowed	./server/Server.h	/^    void setRegistrationAllowed( bool state );$/;"	p	class:Server	access:public	signature:( bool state )
+Server::setStatFile	./server/Server.h	/^    void setStatFile( const QString& filename );$/;"	p	class:Server	access:public	signature:( const QString& filename )
+Server::spawn	./server/Server.h	/^    bool spawn( const QString& address, quint16 port = DEFAULT_SERVER_PORT );$/;"	p	class:Server	access:public	signature:( const QString& address, quint16 port = DEFAULT_SERVER_PORT )
+Server::spawn	./server/Server.h	/^    bool spawn($/;"	p	class:Server	access:public	signature:( const QHostAddress& address, quint16 port = DEFAULT_SERVER_PORT )
+Server::spawn	./server/Server.h	/^    bool spawn();$/;"	p	class:Server	access:public	signature:()
+Server::spawned_	./server/Server.h	/^    bool spawned_;$/;"	m	class:Server	access:private
+Server::statFile	./server/Server.h	/^    const QString& statFile() const;$/;"	p	class:Server	access:public	signature:() const
+Server::statFile_	./server/Server.h	/^    QString statFile_;$/;"	m	class:Server	access:private
+Server::stateAuthorize	./server/Server.h	/^    bool stateAuthorize( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+Server::stateRecieveField	./server/Server.h	/^    bool stateRecieveField( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+Server::stateRecievePing	./server/Server.h	/^    bool stateRecievePing( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+Server::stateRecieveStatus	./server/Server.h	/^    bool stateRecieveStatus( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+Server::stateRecieveSteps	./server/Server.h	/^    bool stateRecieveSteps( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+Server::stats_	./server/Server.h	/^    Statistics stats_;$/;"	m	class:Server	access:private
+Server::tcpServer_	./server/Server.h	/^    QTcpServer* tcpServer_;$/;"	m	class:Server	access:private
+Server::timerEvent	./server/Server.h	/^    void timerEvent( QTimerEvent* event );$/;"	p	class:Server	access:protected	signature:( QTimerEvent* event )
+Server::~Server	./server/Server.h	/^    ~Server();$/;"	p	class:Server	access:public	signature:()
+ShipsTypeList	./server/Field.h	/^    typedef QVector<int> ShipsTypeList;$/;"	t	class:Field	access:public
+Shots	./server/Field.h	/^    typedef QStack<QPoint> Shots;$/;"	t	class:Field	access:public
+State	./client/Model.h	/^enum State$/;"	g
+Statistics	./server/Statistics.h	/^class Statistics$/;"	c
+Statistics::checkPlayer	./server/Statistics.h	/^    void checkPlayer( const QString& login );$/;"	p	class:Statistics	access:private	signature:( const QString& login )
+Statistics::data	./server/Statistics.h	/^    QMap<QString, PlayerStats> data;$/;"	m	class:Statistics	access:private
+Statistics::load	./server/Statistics.h	/^    void load( const QString& fname );$/;"	p	class:Statistics	access:public	signature:( const QString& fname )
+Statistics::playerLost	./server/Statistics.h	/^    void playerLost( const QString& login );$/;"	p	class:Statistics	access:public	signature:( const QString& login )
+Statistics::playerWon	./server/Statistics.h	/^    void playerWon( const QString& login );$/;"	p	class:Statistics	access:public	signature:( const QString& login )
+Statistics::save	./server/Statistics.h	/^    void save( const QString& fname );$/;"	p	class:Statistics	access:public	signature:( const QString& fname )
+UI_MAINWINDOW_H	./client/ui_mainwindow.h	10;"	d
+Ui	./client/mainwindow.h	/^namespace Ui$/;"	n
+Ui	./client/ui_mainwindow.h	/^namespace Ui {$/;"	n
+Ui::MainWindow	./client/ui_mainwindow.h	/^    class MainWindow: public Ui_MainWindow {};$/;"	c	namespace:Ui	inherits:Ui_MainWindow
+Ui_MainWindow	./client/ui_mainwindow.h	/^class Ui_MainWindow$/;"	c
+Ui_MainWindow::actionAbout	./client/ui_mainwindow.h	/^    QAction *actionAbout;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::actionClear	./client/ui_mainwindow.h	/^    QAction *actionClear;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::actionLeave	./client/ui_mainwindow.h	/^    QAction *actionLeave;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::actionQuit	./client/ui_mainwindow.h	/^    QAction *actionQuit;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::actionRandom	./client/ui_mainwindow.h	/^    QAction *actionRandom;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::actionStart	./client/ui_mainwindow.h	/^    QAction *actionStart;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::centralWidget	./client/ui_mainwindow.h	/^    QWidget *centralWidget;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::labelOpponent	./client/ui_mainwindow.h	/^    QLabel *labelOpponent;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::labelStatus	./client/ui_mainwindow.h	/^    QLabel *labelStatus;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::menuAbout	./client/ui_mainwindow.h	/^    QMenu *menuAbout;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::menuBar	./client/ui_mainwindow.h	/^    QMenuBar *menuBar;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::menuField	./client/ui_mainwindow.h	/^    QMenu *menuField;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::menuFile	./client/ui_mainwindow.h	/^    QMenu *menuFile;$/;"	m	class:Ui_MainWindow	access:public
+Ui_MainWindow::retranslateUi	./client/ui_mainwindow.h	/^    void retranslateUi(QMainWindow *MainWindow)$/;"	f	class:Ui_MainWindow	access:public	signature:(QMainWindow *MainWindow)
+Ui_MainWindow::setupUi	./client/ui_mainwindow.h	/^    void setupUi(QMainWindow *MainWindow)$/;"	f	class:Ui_MainWindow	access:public	signature:(QMainWindow *MainWindow)
+WAVEFORMAT	./client/util/PlaySound_nix.h	/^} WAVEFORMAT;$/;"	t	namespace:PlaySoundSpace	typeref:struct:PlaySoundSpace::__anon1
+aboutToQuit	./client/util/PlaySound_nix.h	/^    bool aboutToQuit;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+accept	./client/ConnectionInfoDialog.h	/^    void accept();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+actionAbout	./client/ui_mainwindow.h	/^    QAction *actionAbout;$/;"	m	class:Ui_MainWindow	access:public
+actionClear	./client/ui_mainwindow.h	/^    QAction *actionClear;$/;"	m	class:Ui_MainWindow	access:public
+actionLeave	./client/ui_mainwindow.h	/^    QAction *actionLeave;$/;"	m	class:Ui_MainWindow	access:public
+actionQuit	./client/ui_mainwindow.h	/^    QAction *actionQuit;$/;"	m	class:Ui_MainWindow	access:public
+actionRandom	./client/ui_mainwindow.h	/^    QAction *actionRandom;$/;"	m	class:Ui_MainWindow	access:public
+actionStart	./client/ui_mainwindow.h	/^    QAction *actionStart;$/;"	m	class:Ui_MainWindow	access:public
+addKilledShip	./server/Field.h	/^    void addKilledShip( int shipSize );$/;"	p	class:Field	access:public	signature:( int shipSize )
+addrLabel	./client/ConnectionInfoDialog.h	/^    QLabel* addrLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+addrLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* addrLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+address	./client/ConnectionInfoDialog.h	/^    QString address;$/;"	m	class:ConnectionInfoDialog	access:private
+address	./server/Server.h	/^    QString address() const;$/;"	p	class:Server	access:public	signature:() const
+address	./server/Server.h	/^    void address( QHostAddress& addr ) const;$/;"	p	class:Server	access:public	signature:( QHostAddress& addr ) const
+addressTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* addressTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+address_	./server/Server.h	/^    QHostAddress address_;$/;"	m	class:Server	access:private
+applyButton	./client/ConnectionInfoDialog.h	/^    QPushButton* applyButton;$/;"	m	class:ConnectionInfoDialog	access:private
+authFile	./server/Server.h	/^    const QString& authFile() const;$/;"	p	class:Server	access:public	signature:() const
+authFile_	./server/Server.h	/^    QString authFile_;$/;"	m	class:Server	access:private
+bits_per_frame	./client/util/PlaySound_nix.h	/^    size_t bits_per_frame;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+bits_per_sample	./client/util/PlaySound_nix.h	/^    size_t bits_per_sample;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+buffer_size	./client/util/PlaySound_nix.h	/^    snd_pcm_uframes_t buffer_size;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+buttonLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* buttonLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+cancelButton	./client/ConnectionInfoDialog.h	/^    QPushButton* cancelButton;$/;"	m	class:ConnectionInfoDialog	access:private
+centralWidget	./client/ui_mainwindow.h	/^    QWidget *centralWidget;$/;"	m	class:Ui_MainWindow	access:public
+changeGameOpponent	./client/mainwindow.h	/^    void changeGameOpponent( const QString& name );$/;"	p	class:MainWindow	access:private	signature:( const QString& name )
+checkError	./client/Controller.h	/^    bool checkError(const QString&,const QString&);$/;"	p	class:Controller	access:private	signature:(const QString&,const QString&)
+checkField	./server/Field.h	/^    bool checkField() const;$/;"	p	class:Field	access:public	signature:() const
+checkMyField	./client/Model.h	/^    bool checkMyField() const;$/;"	p	class:Model	access:public	signature:() const
+checkPlayer	./server/Statistics.h	/^    void checkPlayer( const QString& login );$/;"	p	class:Statistics	access:private	signature:( const QString& login )
+checkProtocolVersion	./server/Server.h	/^    bool checkProtocolVersion( int version );$/;"	p	class:Server	access:private	signature:( int version )
+checkUserLogin	./server/Server.h	/^    CheckUserStatus checkUserLogin($/;"	p	class:Server	access:private	signature:( const QString& login, const QString& password )
+chunk_bytes	./client/util/PlaySound_nix.h	/^    size_t chunk_bytes;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+chunk_size	./client/util/PlaySound_nix.h	/^    snd_pcm_uframes_t chunk_size;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+clear	./client/Field.h	/^    void clear();$/;"	p	class:Field	access:public	signature:()
+clearEnemyField	./client/Model.h	/^    void clearEnemyField();$/;"	p	class:Model	access:public	signature:()
+clearFields	./client/Controller.h	/^    void clearFields();$/;"	p	class:Controller	access:public	signature:()
+clearMyField	./client/Model.h	/^    void clearMyField();$/;"	p	class:Model	access:public	signature:()
+client	./client/Controller.h	/^    QTcpSocket* client;$/;"	m	class:Controller	access:private
+clients_	./server/Server.h	/^    Clients clients_;$/;"	m	class:Server	access:private
+closeEvent	./client/mainwindow.h	/^    void closeEvent( QCloseEvent* event );$/;"	p	class:MainWindow	access:protected	signature:( QCloseEvent* event )
+connectTwoClients	./server/Server.h	/^    void connectTwoClients($/;"	p	class:Server	access:private	signature:( Clients::iterator client1, Clients::iterator client2 )
+connectionError	./client/Controller.h	/^    bool connectionError;$/;"	m	class:Controller	access:private
+controller	./client/mainwindow.h	/^    Controller* controller;$/;"	m	class:MainWindow	access:private
+convertField	./server/Field.h	/^    void convertField();$/;"	p	class:Field	access:private	signature:()
+copyFromResource	./client/util/PlaySound_win.h	/^    bool copyFromResource( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+data	./server/Statistics.h	/^    QMap<QString, PlayerStats> data;$/;"	m	class:Statistics	access:private
+datastart	./client/util/PlaySound_nix.h	/^    u_long datastart;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+disconnectClient	./server/Server.h	/^    void disconnectClient( ClientsIterator client );$/;"	p	class:Server	access:private	signature:( ClientsIterator client )
+disconnectClientAndRecord	./server/Server.h	/^    void disconnectClientAndRecord( ClientsIterator client, bool winnerStatus );$/;"	p	class:Server	access:private	signature:( ClientsIterator client, bool winnerStatus )
+dwAvgBytesPerSec	./client/util/PlaySound_nix.h	/^    u_int32_t dwAvgBytesPerSec;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+dwSamplesPerSec	./client/util/PlaySound_nix.h	/^    u_int32_t dwSamplesPerSec;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+dwSize	./client/util/PlaySound_nix.h	/^    u_int32_t dwSize;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+emitError	./client/Controller.h	/^    void emitError(GameErrorMessage error);$/;"	p	class:Controller	access:private	signature:(GameErrorMessage error)
+enemyField	./client/Model.h	/^    Field* myField, *enemyField;$/;"	m	class:Model	access:private
+enemyFieldImage	./client/mainwindow.h	/^    QImage enemyFieldImage();$/;"	p	class:MainWindow	access:private	signature:()
+eventFilter	./client/ConnectionInfoDialog.h	/^    bool eventFilter( QObject* object, QEvent* event );$/;"	p	class:ConnectionInfoDialog	access:protected	signature:( QObject* object, QEvent* event )
+field	./client/Field.h	/^    QVector<Cell> field;$/;"	m	class:Field	access:private
+field	./server/Client.h	/^    Field* field();$/;"	p	class:Client	access:public	signature:()
+fieldLength_	./server/Field.h	/^    int fieldLength_;$/;"	m	class:Field	access:private
+field_	./server/Client.h	/^    Field* field_;$/;"	m	class:Client	access:private
+field_	./server/Field.h	/^    Cells field_;$/;"	m	class:Field	access:private
+forceQuit_	./server/Application.h	/^    bool forceQuit_;$/;"	m	class:Application	access:private
+frames	./client/util/PlaySound_nix.h	/^    snd_pcm_sframes_t frames;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+gameError	./client/Controller.h	/^    void gameError( GameErrorMessage message );$/;"	p	class:Controller	access:public	signature:( GameErrorMessage message )
+gameOpponent	./client/Controller.h	/^    void gameOpponent( const QString& name );$/;"	p	class:Controller	access:public	signature:( const QString& name )
+gameResult	./client/Controller.h	/^    void gameResult( GameResult result );$/;"	p	class:Controller	access:public	signature:( GameResult result )
+get	./client/Images.h	/^    QImage& get( const QString& imgName );$/;"	p	class:Images	access:public	signature:( const QString& imgName )
+getAddress	./client/ConnectionInfoDialog.h	/^    QString getAddress() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+getCell	./client/Field.h	/^    Cell getCell( int x, int y );$/;"	p	class:Field	access:public	signature:( int x, int y )
+getCell	./server/Field.h	/^    Cell getCell( int x, int y ) const;$/;"	p	class:Field	access:public	signature:( int x, int y ) const
+getCellPrivate	./server/Field.h	/^    Cell getCellPrivate( int x, int y, const Cells& cells ) const;$/;"	p	class:Field	access:private	signature:( int x, int y, const Cells& cells ) const
+getEnemyCell	./client/Model.h	/^    Cell getEnemyCell( int x, int y ) const;$/;"	p	class:Model	access:public	signature:( int x, int y ) const
+getEnemyField	./client/Model.h	/^    QString getEnemyField() const;$/;"	p	class:Model	access:public	signature:() const
+getEnemyFieldCoord	./client/Utility.h	/^QPoint getEnemyFieldCoord( const QPoint& pos );$/;"	p	signature:( const QPoint& pos )
+getField	./client/Field.h	/^    QString getField();$/;"	p	class:Field	access:public	signature:()
+getFieldImage	./client/mainwindow.h	/^    QImage getFieldImage( char );$/;"	p	class:MainWindow	access:private	signature:( char )
+getFieldLength	./server/Field.h	/^    quint32 getFieldLength() const;$/;"	p	class:Field	access:public	signature:() const
+getFieldSize	./server/Field.h	/^    quint32 getFieldSize() const;$/;"	p	class:Field	access:public	signature:() const
+getLogin	./client/ConnectionInfoDialog.h	/^    QString getLogin() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+getLogin	./client/Model.h	/^    QString getLogin() const;$/;"	p	class:Model	access:public	signature:() const
+getMyCell	./client/Model.h	/^    Cell getMyCell( int x, int y ) const;$/;"	p	class:Model	access:public	signature:( int x, int y ) const
+getMyField	./client/Model.h	/^    QString getMyField() const;$/;"	p	class:Model	access:public	signature:() const
+getMyFieldCoord	./client/Utility.h	/^QPoint getMyFieldCoord( const QPoint& pos );$/;"	p	signature:( const QPoint& pos )
+getPassword	./client/ConnectionInfoDialog.h	/^    QString getPassword() const;$/;"	p	class:ConnectionInfoDialog	access:public	signature:() const
+getPassword	./client/Model.h	/^    QString getPassword() const;$/;"	p	class:Model	access:public	signature:() const
+getPort	./client/ConnectionInfoDialog.h	/^    quint16 getPort();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+getServerAddress	./client/Controller.h	/^    QString getServerAddress() const;$/;"	p	class:Controller	access:public	signature:() const
+getServerPort	./client/Controller.h	/^    quint16 getServerPort() const;$/;"	p	class:Controller	access:public	signature:() const
+getShipSize	./server/Field.h	/^    quint32 getShipSize() const;$/;"	p	class:Field	access:public	signature:() const
+getShipsCount	./server/Field.h	/^    quint32 getShipsCount() const;$/;"	p	class:Field	access:public	signature:() const
+getState	./client/Controller.h	/^    State getState() const;$/;"	p	class:Controller	access:public	signature:() const
+getState	./client/Model.h	/^    State getState() const;$/;"	p	class:Model	access:public	signature:() const
+getUserLogin	./client/Controller.h	/^    QString getUserLogin() const;$/;"	p	class:Controller	access:public	signature:() const
+getUserPassword	./client/Controller.h	/^    QString getUserPassword() const;$/;"	p	class:Controller	access:public	signature:() const
+guestAllowed_	./server/Server.h	/^    bool guestAllowed_;$/;"	m	class:Server	access:private
+handle	./client/util/PlaySound_nix.h	/^    snd_pcm_t* handle;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+hitSound	./client/Controller.h	/^    PlaySound* hitSound;$/;"	m	class:Controller	access:private
+images	./client/Images.h	/^    QMap<QString, QImage> images;$/;"	m	class:Images	access:private
+init	./server/Application.h	/^    bool init();$/;"	p	class:Application	access:public	signature:()
+initField	./server/Field.h	/^    void initField( const QString& stringField );$/;"	p	class:Field	access:public	signature:( const QString& stringField )
+initSound	./client/util/PlaySound_nix.h	/^    bool initSound( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+initSound	./client/util/PlaySound_win.h	/^    bool initSound( const QString& fileName );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:private	signature:( const QString& fileName )
+isAllKilled	./server/Field.h	/^    bool isAllKilled() const;$/;"	p	class:Field	access:public	signature:() const
+isGuestAllowed	./server/Server.h	/^    bool isGuestAllowed() const;$/;"	p	class:Server	access:public	signature:() const
+isLoaded	./client/Images.h	/^    bool isLoaded();$/;"	p	class:Images	access:public	signature:()
+isLoaded_	./client/Images.h	/^    bool isLoaded_;$/;"	m	class:Images	access:private
+isOption	./server/Application.h	/^    bool isOption( const QString& arg, const QString& option );$/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& option )
+isOption	./server/Application.h	/^    bool isOption($/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& option1, const QString& option2 )
+isRegistrationAllowed	./server/Server.h	/^    bool isRegistrationAllowed() const;$/;"	p	class:Server	access:public	signature:() const
+isShip	./client/Model.h	/^    bool isShip( int size, int x, int y ) const;$/;"	p	class:Model	access:private	signature:( int size, int x, int y ) const
+isUserConnected	./server/Server.h	/^    bool isUserConnected(const QString& cmd);$/;"	p	class:Server	access:private	signature:(const QString& cmd)
+killedShips_	./server/Field.h	/^    ShipsTypeList killedShips_;$/;"	m	class:Field	access:private
+labelInfo	./client/AboutDialog.h	/^    QLabel* labelInfo;$/;"	m	class:AboutDialog	access:protected
+labelOpponent	./client/ui_mainwindow.h	/^    QLabel *labelOpponent;$/;"	m	class:Ui_MainWindow	access:public
+labelStatus	./client/ui_mainwindow.h	/^    QLabel *labelStatus;$/;"	m	class:Ui_MainWindow	access:public
+labelURL	./client/AboutDialog.h	/^    QLabel* labelURL;$/;"	m	class:AboutDialog	access:protected
+lastSeen	./server/Client.h	/^    size_t lastSeen();$/;"	p	class:Client	access:public	signature:()
+lastSeen_	./server/Client.h	/^    size_t lastSeen_;$/;"	m	class:Client	access:private
+layout	./client/ConnectionInfoDialog.h	/^    QGridLayout* layout;$/;"	m	class:ConnectionInfoDialog	access:private
+load	./client/Images.h	/^    void load();$/;"	p	class:Images	access:public	signature:()
+load	./server/Statistics.h	/^    void load( const QString& fname );$/;"	p	class:Statistics	access:public	signature:( const QString& fname )
+login	./client/ConnectionInfoDialog.h	/^    QString login;$/;"	m	class:ConnectionInfoDialog	access:private
+login	./client/Model.h	/^    QString login, pass;$/;"	m	class:Model	access:private
+login	./server/Client.h	/^    QString login;$/;"	m	class:Client	access:public
+loginLabel	./client/ConnectionInfoDialog.h	/^    QLabel* loginLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+loginLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* loginLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+loginTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* loginTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+makeShot	./server/Field.h	/^    bool makeShot( int x, int y, Shots& killShots );$/;"	p	class:Field	access:public	signature:( int x, int y, Shots& killShots )
+markEnemyPoint	./client/Controller.h	/^    void markEnemyPoint( int x, int y, Cell cell );$/;"	p	class:Controller	access:private	signature:( int x, int y, Cell cell )
+markShip	./client/Controller.h	/^    void markShip( int x, int y, Cell cell, bool atEnemyField = false );$/;"	p	class:Controller	access:private	signature:( int x, int y, Cell cell, bool atEnemyField = false )
+menuAbout	./client/ui_mainwindow.h	/^    QMenu *menuAbout;$/;"	m	class:Ui_MainWindow	access:public
+menuBar	./client/ui_mainwindow.h	/^    QMenuBar *menuBar;$/;"	m	class:Ui_MainWindow	access:public
+menuField	./client/ui_mainwindow.h	/^    QMenu *menuField;$/;"	m	class:Ui_MainWindow	access:public
+menuFile	./client/ui_mainwindow.h	/^    QMenu *menuFile;$/;"	m	class:Ui_MainWindow	access:public
+missSound	./client/Controller.h	/^    PlaySound* missSound;$/;"	m	class:Controller	access:private
+model	./client/Controller.h	/^    Model* model;$/;"	m	class:Controller	access:private
+model	./client/mainwindow.h	/^    Model* model;$/;"	m	class:MainWindow	access:private
+mousePressEvent	./client/mainwindow.h	/^    void mousePressEvent( QMouseEvent* ev );$/;"	p	class:MainWindow	access:protected	signature:( QMouseEvent* ev )
+myField	./client/Model.h	/^    Field* myField, *enemyField;$/;"	m	class:Model	access:private
+myFieldImage	./client/mainwindow.h	/^    QImage myFieldImage();$/;"	p	class:MainWindow	access:private	signature:()
+okButton	./client/AboutDialog.h	/^    QPushButton* okButton;$/;"	m	class:AboutDialog	access:protected
+onConnected	./client/Controller.h	/^    void onConnected();$/;"	p	class:Controller	access:private	signature:()
+onDataReceived	./client/Controller.h	/^    void onDataReceived();$/;"	p	class:Controller	access:private	signature:()
+onError	./client/Controller.h	/^    void onError( QAbstractSocket::SocketError socketError );$/;"	p	class:Controller	access:private	signature:( QAbstractSocket::SocketError socketError )
+onGameQuit	./client/Controller.h	/^    void onGameQuit();$/;"	p	class:Controller	access:public	signature:()
+onGameStart	./client/Controller.h	/^    void onGameStart();$/;"	p	class:Controller	access:public	signature:()
+onMousePressed	./client/Controller.h	/^    void onMousePressed( const QPoint& position, bool setShip = true );$/;"	p	class:Controller	access:public	signature:( const QPoint& position, bool setShip = true )
+on_actionAbout_triggered	./client/mainwindow.h	/^    void on_actionAbout_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+on_actionClear_triggered	./client/mainwindow.h	/^    void on_actionClear_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+on_actionLeave_activated	./client/mainwindow.h	/^    void on_actionLeave_activated();$/;"	p	class:MainWindow	access:private	signature:()
+on_actionQuit_triggered	./client/mainwindow.h	/^    void on_actionQuit_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+on_actionRandom_triggered	./client/mainwindow.h	/^    void on_actionRandom_triggered();$/;"	p	class:MainWindow	access:private	signature:()
+on_actionStart_activated	./client/mainwindow.h	/^    void on_actionStart_activated();$/;"	p	class:MainWindow	access:private	signature:()
+on_labelURL_clicked	./client/AboutDialog.h	/^    void on_labelURL_clicked( const QString& url );$/;"	p	class:AboutDialog	access:public	signature:( const QString& url )
+on_newUserConnected	./server/Server.h	/^    void on_newUserConnected();$/;"	p	class:Server	access:private	signature:()
+on_recievedData	./server/Server.h	/^    void on_recievedData();$/;"	p	class:Server	access:private	signature:()
+paintEvent	./client/AboutDialog.h	/^    void paintEvent( QPaintEvent* event );$/;"	p	class:AboutDialog	access:protected	signature:( QPaintEvent* event )
+paintEvent	./client/mainwindow.h	/^    void paintEvent( QPaintEvent* event );$/;"	p	class:MainWindow	access:protected	signature:( QPaintEvent* event )
+parseCmdLine	./server/Application.h	/^    void parseCmdLine();$/;"	p	class:Application	access:private	signature:()
+parseData	./client/Controller.h	/^    void parseData( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseData	./server/Server.h	/^    void parseData( const QString& cmd, int clientId );$/;"	p	class:Server	access:private	signature:( const QString& cmd, int clientId )
+parseErrorInfo	./client/Controller.h	/^    bool parseErrorInfo( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseFields	./client/Controller.h	/^    bool parseFields( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseFound	./client/Controller.h	/^    bool parseFound( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseGameResult	./client/Controller.h	/^    bool parseGameResult( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseGo	./client/Controller.h	/^    bool parseGo( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseOptions	./server/Application.h	/^    bool parseOptions( const QString& arg );$/;"	p	class:Application	access:private	signature:( const QString& arg )
+parseOptionsWithParam	./server/Application.h	/^    bool parseOptionsWithParam( const QString& arg, const QString& param );$/;"	p	class:Application	access:private	signature:( const QString& arg, const QString& param )
+parsePing	./client/Controller.h	/^    bool parsePing( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseWrongField	./client/Controller.h	/^    bool parseWrongField( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+parseWrongStep	./client/Controller.h	/^    bool parseWrongStep( const QString& data );$/;"	p	class:Controller	access:private	signature:( const QString& data )
+pass	./client/ConnectionInfoDialog.h	/^    QString pass;$/;"	m	class:ConnectionInfoDialog	access:private
+pass	./client/Model.h	/^    QString login, pass;$/;"	m	class:Model	access:private
+passLabel	./client/ConnectionInfoDialog.h	/^    QLabel* passLabel;$/;"	m	class:ConnectionInfoDialog	access:private
+passLayout	./client/ConnectionInfoDialog.h	/^    QHBoxLayout* passLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+passTextBox	./client/ConnectionInfoDialog.h	/^    QLineEdit* passTextBox;$/;"	m	class:ConnectionInfoDialog	access:private
+placeShipAtRandom	./client/Controller.h	/^    void placeShipAtRandom( int size );$/;"	p	class:Controller	access:private	signature:( int size )
+play	./client/util/PlaySound.h	/^    void play( const QString& fileName );$/;"	p	class:PlaySound	access:public	signature:( const QString& fileName )
+play	./client/util/PlaySound.h	/^    void play();$/;"	p	class:PlaySound	access:public	signature:()
+player	./server/Statistics.h	/^    QString player;$/;"	m	struct:sortStruct	access:public
+playerLost	./server/Statistics.h	/^    void playerLost( const QString& login );$/;"	p	class:Statistics	access:public	signature:( const QString& login )
+playerWon	./server/Statistics.h	/^    void playerWon( const QString& login );$/;"	p	class:Statistics	access:public	signature:( const QString& login )
+playingWith	./server/Client.h	/^    ClientIterator playingWith;$/;"	m	class:Client	access:public
+port	./client/ConnectionInfoDialog.h	/^    quint16 port;$/;"	m	class:ConnectionInfoDialog	access:private
+port	./server/Server.h	/^    int port() const;$/;"	p	class:Server	access:public	signature:() const
+port_	./server/Server.h	/^    quint16 port_;$/;"	m	class:Server	access:private
+quit	./client/util/PlaySound_nix.h	/^    void quit();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+quit	./client/util/PlaySound_win.h	/^    void quit();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+randomField	./client/Controller.h	/^    void randomField();$/;"	p	class:Controller	access:public	signature:()
+readConfig	./client/Controller.h	/^    void readConfig();$/;"	p	class:Controller	access:private	signature:()
+recordSessionStatistic	./server/Server.h	/^    void recordSessionStatistic($/;"	p	class:Server	access:private	signature:( const QString& winner, const QString& looser )
+redraw	./client/mainwindow.h	/^    void redraw();$/;"	p	class:MainWindow	access:private	signature:()
+registerUserLogin	./server/Server.h	/^    bool registerUserLogin( const QString& login, const QString& password );$/;"	p	class:Server	access:private	signature:( const QString& login, const QString& password )
+registrationAllowed_	./server/Server.h	/^    bool registrationAllowed_;$/;"	m	class:Server	access:private
+retranslateUi	./client/ui_mainwindow.h	/^    void retranslateUi(QMainWindow *MainWindow)$/;"	f	class:Ui_MainWindow	access:public	signature:(QMainWindow *MainWindow)
+roundsLost	./server/Statistics.h	/^    int roundsLost;$/;"	m	struct:PlayerStats	access:public
+roundsLost	./server/Statistics.h	/^    int roundsLost;$/;"	m	struct:sortStruct	access:public
+roundsWon	./server/Statistics.h	/^    int roundsWon;$/;"	m	struct:PlayerStats	access:public
+run	./client/util/PlaySound_nix.h	/^    void run();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+run	./client/util/PlaySound_win.h	/^    void run();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+samples	./client/util/PlaySound_nix.h	/^    u_long samples;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+save	./server/Statistics.h	/^    void save( const QString& fname );$/;"	p	class:Statistics	access:public	signature:( const QString& fname )
+saveConfig	./client/Controller.h	/^    void saveConfig();$/;"	p	class:Controller	access:private	signature:()
+send	./server/Client.h	/^    void send( const QString& cmd );$/;"	p	class:Client	access:public	signature:( const QString& cmd )
+serverAddress	./client/Controller.h	/^    QHostAddress serverAddress;$/;"	m	class:Controller	access:private
+serverPort	./client/Controller.h	/^    quint16 serverPort;$/;"	m	class:Controller	access:private
+server_	./server/Application.h	/^    Server* server_;$/;"	m	class:Application	access:private
+setAddress	./server/Server.h	/^    void setAddress( const QString& address );$/;"	p	class:Server	access:public	signature:( const QString& address )
+setAddressString	./client/ConnectionInfoDialog.h	/^    void setAddressString( const QHostAddress& address, quint16 port );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QHostAddress& address, quint16 port )
+setAddressString	./client/ConnectionInfoDialog.h	/^    void setAddressString( const QString& address, quint16 port );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& address, quint16 port )
+setAuthFile	./server/Server.h	/^    void setAuthFile( const QString& filename );$/;"	p	class:Server	access:public	signature:( const QString& filename )
+setCell	./client/Field.h	/^    void setCell( int x, int y, Cell cell );$/;"	p	class:Field	access:public	signature:( int x, int y, Cell cell )
+setCell	./server/Field.h	/^    void setCell( int x, int y, Cell cell );$/;"	p	class:Field	access:public	signature:( int x, int y, Cell cell )
+setCellPrivate	./server/Field.h	/^    void setCellPrivate( int x, int y, Cell cell, Cells& cells ) const;$/;"	p	class:Field	access:private	signature:( int x, int y, Cell cell, Cells& cells ) const
+setConnectionInfo	./client/Controller.h	/^    void setConnectionInfo($/;"	p	class:Controller	access:public	signature:( const QString& address, quint16 port, const QString& login, const QString& password )
+setEnemyCell	./client/Model.h	/^    void setEnemyCell( int x, int y, Cell cell );$/;"	p	class:Model	access:public	signature:( int x, int y, Cell cell )
+setField	./server/Client.h	/^    void setField( const QString& field, int shipSize );$/;"	p	class:Client	access:public	signature:( const QString& field, int shipSize )
+setGuestAllowed	./server/Server.h	/^    void setGuestAllowed( bool state );$/;"	p	class:Server	access:public	signature:( bool state )
+setLogin	./client/ConnectionInfoDialog.h	/^    void setLogin( const QString& login );$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& login )
+setLogin	./client/Model.h	/^    void setLogin( const QString& str );$/;"	p	class:Model	access:public	signature:( const QString& str )
+setMyCell	./client/Model.h	/^    void setMyCell( int x, int y, Cell cell );$/;"	p	class:Model	access:public	signature:( int x, int y, Cell cell )
+setPassword	./client/ConnectionInfoDialog.h	/^    void setPassword( const QString& password);$/;"	p	class:ConnectionInfoDialog	access:public	signature:( const QString& password)
+setPassword	./client/Model.h	/^    void setPassword( const QString& str );$/;"	p	class:Model	access:public	signature:( const QString& str )
+setPort	./server/Server.h	/^    void setPort( quint16 port );$/;"	p	class:Server	access:public	signature:( quint16 port )
+setRegistrationAllowed	./server/Server.h	/^    void setRegistrationAllowed( bool state );$/;"	p	class:Server	access:public	signature:( bool state )
+setSeen	./server/Client.h	/^    void setSeen();$/;"	p	class:Client	access:public	signature:()
+setSoundFile	./client/util/PlaySound_nix.h	/^    void setSoundFile( const QString& filename );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename )
+setSoundFile	./client/util/PlaySound_win.h	/^    void setSoundFile( const QString& filename );$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:( const QString& filename )
+setStatFile	./server/Server.h	/^    void setStatFile( const QString& filename );$/;"	p	class:Server	access:public	signature:( const QString& filename )
+setState	./client/Model.h	/^    void setState( State );$/;"	p	class:Model	access:public	signature:( State )
+setStatus	./client/mainwindow.h	/^    void setStatus( const QString& status );$/;"	p	class:MainWindow	access:private	signature:( const QString& status )
+setupUi	./client/ui_mainwindow.h	/^    void setupUi(QMainWindow *MainWindow)$/;"	f	class:Ui_MainWindow	access:public	signature:(QMainWindow *MainWindow)
+sf	./client/util/PlaySound_nix.h	/^    QFile sf;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+shipNum	./client/Model.h	/^    int shipNum( int size ) const;$/;"	p	class:Model	access:private	signature:( int size ) const
+shipSize_	./server/Field.h	/^    int shipSize_;$/;"	m	class:Field	access:private
+showField	./server/Field.h	/^    void showField() const;$/;"	p	class:Field	access:public	signature:() const
+showGameError	./client/mainwindow.h	/^    void showGameError( GameErrorMessage message );$/;"	p	class:MainWindow	access:private	signature:( GameErrorMessage message )
+showGameResult	./client/mainwindow.h	/^    void showGameResult( GameResult result );$/;"	p	class:MainWindow	access:private	signature:( GameResult result )
+socket	./server/Client.h	/^    QTcpSocket* socket;$/;"	m	class:Client	access:public
+sortStruct	./server/Statistics.h	/^struct sortStruct$/;"	s
+sortStruct::player	./server/Statistics.h	/^    QString player;$/;"	m	struct:sortStruct	access:public
+sortStruct::roundsLost	./server/Statistics.h	/^    int roundsLost;$/;"	m	struct:sortStruct	access:public
+soundFile	./client/util/PlaySound_nix.h	/^    const QString& soundFile() const;$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:() const
+soundFile	./client/util/PlaySound_win.h	/^    const QString& soundFile() const;$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:() const
+soundFileName_	./client/util/PlaySound_nix.h	/^    QString soundFileName_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+soundFileName_	./client/util/PlaySound_win.h	/^    QString soundFileName_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+soundInited	./client/util/PlaySound_nix.h	/^    bool soundInited;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+soundThread_	./client/util/PlaySound.h	/^    PlaySoundSpace::PlaySoundThread* soundThread_;$/;"	m	class:PlaySound	access:private
+sound_	./client/util/PlaySound_win.h	/^    QSound* sound_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+spawn	./server/Server.h	/^    bool spawn( const QString& address, quint16 port = DEFAULT_SERVER_PORT );$/;"	p	class:Server	access:public	signature:( const QString& address, quint16 port = DEFAULT_SERVER_PORT )
+spawn	./server/Server.h	/^    bool spawn($/;"	p	class:Server	access:public	signature:( const QHostAddress& address, quint16 port = DEFAULT_SERVER_PORT )
+spawn	./server/Server.h	/^    bool spawn();$/;"	p	class:Server	access:public	signature:()
+spawnServer	./server/Application.h	/^    bool spawnServer();$/;"	p	class:Application	access:private	signature:()
+spawned_	./server/Server.h	/^    bool spawned_;$/;"	m	class:Server	access:private
+statFile	./server/Server.h	/^    const QString& statFile() const;$/;"	p	class:Server	access:public	signature:() const
+statFile_	./server/Server.h	/^    QString statFile_;$/;"	m	class:Server	access:private
+state	./client/Model.h	/^    State state;$/;"	m	class:Model	access:private
+state	./client/mainwindow.h	/^    State state;$/;"	m	class:MainWindow	access:private
+stateAuthorize	./server/Server.h	/^    bool stateAuthorize( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+stateChanged	./client/Controller.h	/^    void stateChanged();$/;"	p	class:Controller	access:public	signature:()
+stateRecieveField	./server/Server.h	/^    bool stateRecieveField( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+stateRecievePing	./server/Server.h	/^    bool stateRecievePing( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+stateRecieveStatus	./server/Server.h	/^    bool stateRecieveStatus( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+stateRecieveSteps	./server/Server.h	/^    bool stateRecieveSteps( const QString& cmd, ClientsIterator client );$/;"	p	class:Server	access:private	signature:( const QString& cmd, ClientsIterator client )
+stats_	./server/Server.h	/^    Statistics stats_;$/;"	m	class:Server	access:private
+status	./server/Client.h	/^    ClientStatus status;$/;"	m	class:Client	access:public
+stop	./client/util/PlaySound.h	/^    void stop();$/;"	p	class:PlaySound	access:public	signature:()
+tcpServer_	./server/Server.h	/^    QTcpServer* tcpServer_;$/;"	m	class:Server	access:private
+terminate	./client/util/PlaySound_nix.h	/^    void terminate();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+timerEvent	./server/Server.h	/^    void timerEvent( QTimerEvent* event );$/;"	p	class:Server	access:protected	signature:( QTimerEvent* event )
+tmpFile_	./client/util/PlaySound_win.h	/^    QTemporaryFile* tmpFile_;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+ui	./client/mainwindow.h	/^    Ui::MainWindow* ui;$/;"	m	class:MainWindow	access:private
+verticalLayout	./client/AboutDialog.h	/^    QVBoxLayout* verticalLayout;$/;"	m	class:AboutDialog	access:protected
+verticalLayout	./client/ConnectionInfoDialog.h	/^    QVBoxLayout* verticalLayout;$/;"	m	class:ConnectionInfoDialog	access:private
+wBitsPerSample	./client/util/PlaySound_nix.h	/^    u_int16_t wBitsPerSample;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+wBlockAlign	./client/util/PlaySound_nix.h	/^    u_int16_t wBlockAlign;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+wChannels	./client/util/PlaySound_nix.h	/^    u_int16_t wChannels;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+wFormatTag	./client/util/PlaySound_nix.h	/^    u_int16_t wFormatTag;$/;"	m	struct:PlaySoundSpace::__anon1	access:public
+waveformat	./client/util/PlaySound_nix.h	/^    WAVEFORMAT waveformat;$/;"	m	class:PlaySoundSpace::PlaySoundThread	access:private
+~Application	./server/Application.h	/^    ~Application();$/;"	p	class:Application	access:public	signature:()
+~Client	./server/Client.h	/^    ~Client();$/;"	p	class:Client	access:public	signature:()
+~ConnectionInfoDialog	./client/ConnectionInfoDialog.h	/^    ~ConnectionInfoDialog();$/;"	p	class:ConnectionInfoDialog	access:public	signature:()
+~Controller	./client/Controller.h	/^    ~Controller();$/;"	p	class:Controller	access:public	signature:()
+~Field	./client/Field.h	/^    ~Field();$/;"	p	class:Field	access:public	signature:()
+~MainWindow	./client/mainwindow.h	/^    ~MainWindow();$/;"	p	class:MainWindow	access:public	signature:()
+~Model	./client/Model.h	/^    ~Model();$/;"	p	class:Model	access:public	signature:()
+~PlaySound	./client/util/PlaySound.h	/^    ~PlaySound();$/;"	p	class:PlaySound	access:public	signature:()
+~PlaySoundThread	./client/util/PlaySound_nix.h	/^    ~PlaySoundThread();$/;"	p	class:PlaySoundSpace::PlaySoundThread	access:public	signature:()
+~Server	./server/Server.h	/^    ~Server();$/;"	p	class:Server	access:public	signature:()

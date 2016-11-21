@@ -130,6 +130,15 @@ void Controller::onMousePressed( const QPoint& pos, bool setShip )
         emit stateChanged();
         return;
     }
+
+    if( model->getState() == ST_VIEW_RESULTS )
+    {
+        model->setState(ST_PLACING_SHIPS);
+        model->clearMyField();
+        model->clearEnemyField();
+        emit stateChanged();
+        return;
+    }
 }
 
 void Controller::onDataReceived()
@@ -318,15 +327,15 @@ bool Controller::parseGameResult( const QString& data )
         return true;
     }
 
-    QRegExp rx2( "lose:" );
+    QRegExp rx1( "lose_result:" );
 
-    if( rx2.indexIn(data) != -1 )
+    if( rx1.indexIn(data) != -1 )
     {
-        qDebug() << "We lose!";
         emit gameResult( GR_LOST );
-        model->setState( ST_PLACING_SHIPS );
-        model->clearMyField();
-        model->clearEnemyField();
+        model->setState( ST_VIEW_RESULTS );
+        QString tmp = data.mid(rx1.indexIn(data)+12);
+        qDebug() << "tmp = " << tmp;
+        model->setEnemyField(tmp);
         return true;
     }
 
@@ -348,7 +357,9 @@ void Controller::onGameStart()
     }
 
     // hardcoded server address
-    serverAddress = QHostAddress( "193.169.33.254" );
+
+    serverAddress = QHostAddress( "127.0.0.1" );
+//    serverAddress = QHostAddress( "193.169.33.254" );
 
     client->connectToHost( serverAddress, serverPort );
 

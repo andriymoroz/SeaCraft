@@ -347,3 +347,20 @@ bool Field::makeShot( int x, int y, Shots& killShots )
     addKilledShip( shipSize );
     return true;
 }
+
+QString Field::getField()
+{
+    showField();
+    QString str ="";
+    for( int x = 0; x < fieldLength_; x++ )
+       for( int y = 0; y < fieldLength_; y++)
+           if ((getCell(x, y) == 0)||(getCell(x,y) == 100))
+               str +='0';
+           else if (getCell(x,y) == 101)
+               str +='2';
+           else
+               str +='1';
+
+    qDebug() << str;
+    return str;
+}

@@ -36,7 +36,6 @@ void Field::setCell( int x, int y, Cell cell )
         return;
     }
 
-    //qDebug() << "ERROR: no such cell (" << x << "x" << y << ")";
 }
 
 QString Field::getField()

@@ -1,0 +1,4308 @@
+cscope 15 $HOME/Dropbox/scripts/SeaCraft -q 0000000521 0000022061
+	@client/AboutDialog.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QDŸlog
+>
+
+4 
+	~<QLab–
+>
+
+5 
+	~<QVBoxLayout
+>
+
+7 şas 
+	cAboutDŸlog
+ : 
+public
+ 
+QDŸlog
+
+
+9 
+Q_OBJECT
+
+
+11 
+public
+:
+
+12 
+ex¶ic™
+ 
+AboutDŸlog
+Ğ
+QWidg‘
+* 
+·»Á
+ = 0, 
+Qt
+::
+WšdowFÏgs
+ 
+f
+ = 0 );
+
+14 
+public
+ 
+	m¦Ùs
+:
+
+15 
+Ú_Ïb–URL_şicked
+ĞcÚ¡ 
+QSŒšg
+& 
+u¾
+ );
+
+17 
+	m´Ùeùed
+:
+
+18 
+·štEv’t
+Ğ
+QPaštEv’t
+* 
+ev’t
+ );
+
+19 
+QPushBu‰Ú
+* 
+	mokBu‰Ú
+;
+
+20 
+QLab–
+* 
+	mÏb–URL
+;
+
+21 
+QLab–
+* 
+	mÏb–Info
+;
+
+22 
+QVBoxLayout
+* 
+	mv”tiÿlLayout
+;
+
+	@client/ConnectionInfoDialog.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QLšeEd™
+>
+
+3 
+	~<QPushBu‰Ú
+>
+
+4 
+	~<QVBoxLayout
+>
+
+5 
+	~<QHBoxLayout
+>
+
+6 
+	~<QSŒšg
+>
+
+7 
+	~<QDŸlog
+>
+
+8 
+	~<QHo¡Add»ss
+>
+
+9 
+	~<QMes§geBox
+>
+
+10 
+	~<QLab–
+>
+
+12 şas 
+	cCÚÃùiÚInfoDŸlog
+ : 
+public
+ 
+QDŸlog
+
+
+14 
+Q_OBJECT
+
+
+15 
+public
+:
+
+16 
+ex¶ic™
+ 
+CÚÃùiÚInfoDŸlog
+Ğ
+QWidg‘
+* 
+·»Á
+ = 0 );
+
+17 ~
+CÚÃùiÚInfoDŸlog
+();
+
+19 
+£tAdd»ssSŒšg
+ĞcÚ¡ 
+QSŒšg
+& 
+add»ss
+, 
+qušt16
+ 
+pÜt
+ );
+
+20 
+£tAdd»ssSŒšg
+ĞcÚ¡ 
+QHo¡Add»ss
+& 
+add»ss
+, 
+qušt16
+ 
+pÜt
+ );
+
+21 
+£tLogš
+ĞcÚ¡ 
+QSŒšg
+& 
+logš
+ );
+
+22 
+£tPasswÜd
+ĞcÚ¡ 
+QSŒšg
+& 
+·sswÜd
+);
+
+23 
+QSŒšg
+ 
+	$g‘Add»ss
+() const;
+
+24 
+QSŒšg
+ 
+	$g‘Logš
+() const;
+
+25 
+QSŒšg
+ 
+	$g‘PasswÜd
+() const;
+
+26 
+qušt16
+ 
+	`g‘PÜt
+();
+
+28 
+public
+ 
+¦Ùs
+:
+
+29 
+	`acû±
+();
+
+31 
+´Ùeùed
+:
+
+32 
+boŞ
+ 
+	`ev’tF‹r
+Ğ
+QObjeù
+* 
+objeù
+, 
+QEv’t
+* 
+ev’t
+ );
+
+34 
+´iv©e
+:
+
+35 
+QLšeEd™
+* 
+add»ssTextBox
+;
+
+36 
+QLšeEd™
+* 
+logšTextBox
+;
+
+37 
+QLšeEd™
+* 
+·ssTextBox
+;
+
+39 
+QLab–
+* 
+addrLab–
+;
+
+40 
+QLab–
+* 
+logšLab–
+;
+
+41 
+QLab–
+* 
+·ssLab–
+;
+
+43 
+QPushBu‰Ú
+* 
+ÿnûlBu‰Ú
+;
+
+44 
+QPushBu‰Ú
+* 
+­¶yBu‰Ú
+;
+
+46 
+QHBoxLayout
+* 
+addrLayout
+;
+
+47 
+QHBoxLayout
+* 
+logšLayout
+;
+
+48 
+QHBoxLayout
+* 
+·ssLayout
+;
+
+49 
+QHBoxLayout
+* 
+bu‰ÚLayout
+;
+
+50 
+QVBoxLayout
+* 
+v”tiÿlLayout
+;
+
+52 
+QGridLayout
+* 
+Ïyout
+;
+
+54 
+QSŒšg
+ 
+add»ss
+;
+
+55 
+QSŒšg
+ 
+logš
+;
+
+56 
+QSŒšg
+ 
+·ss
+;
+
+57 
+qušt16
+ 
+pÜt
+;
+
+	@client/Controller.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QObjeù
+>
+
+3 
+	~<QPošt
+>
+
+4 
+	~<QTıSock‘
+>
+
+5 
+	~<QRegExp
+>
+
+6 
+	~<QMes§geBox
+>
+
+7 
+	~<QFe
+>
+
+8 
+	~<QRegExp
+>
+
+9 
+	~"Mod–.h
+"
+
+10 
+	~"Ut™y.h
+"
+
+11 
+	~"CÚÃùiÚInfoDŸlog.h
+"
+
+12 
+	~"ut/PÏySound.h
+"
+
+14 
+	eGameResuÉ
+
+
+16 
+	mGR_NONE
+ = 0,
+
+17 
+	mGR_WON
+ = 1,
+
+18 
+	mGR_LOST
+ = -1
+
+21 
+	eGameE¼ÜMes§ge
+
+
+23 
+	mGEM_UNKNOWN
+ = -1,
+
+24 
+	mGEM_NONE
+ = 0,
+
+25 
+	mGEM_ALREADY_CONNECTED
+,
+
+26 
+	mGEM_WRONG_FIELD
+,
+
+27 
+	mGEM_WRONG_USER
+,
+
+28 
+	mGEM_SERVER_ERROR
+,
+
+29 
+	mGEM_SERVER_CONNECTION_REFUSED
+,
+
+30 
+	mGEM_SERVER_CONNECTION_TIMEOUT
+,
+
+31 
+	mGEM_SERVER_UNAVAILABLE
+
+
+34 şas 
+	cCÚŒŞËr
+: 
+public
+ 
+QWidg‘
+
+
+36 
+Q_OBJECT
+
+
+37 
+public
+:
+
+38 
+CÚŒŞËr
+Ğ
+Mod–
+* 
+mod–_
+ );
+
+39 ~
+CÚŒŞËr
+();
+
+40 
+ÚMou£P»s£d
+ĞcÚ¡ 
+QPošt
+& 
+pos™iÚ
+, 
+boŞ
+ 
+£tSh
+ = 
+Œue
+ );
+
+41 
+ÚGameS¹
+();
+
+42 
+ÚGameQu™
+();
+
+43 
+ş—rF›lds
+();
+
+44 
+¿ndomF›ld
+();
+
+45 
+S‹
+ 
+	$g‘S‹
+() const;
+
+46 
+	`£tCÚÃùiÚInfo
+(
+
+47 cÚ¡ 
+QSŒšg
+& 
+add»ss
+,
+
+48 
+qušt16
+ 
+pÜt
+,
+
+49 cÚ¡ 
+QSŒšg
+& 
+logš
+,
+
+50 cÚ¡ 
+QSŒšg
+& 
+·sswÜd
+
+
+52 
+QSŒšg
+ 
+	$g‘S”v”Add»ss
+() const;
+
+53 
+qušt16
+ 
+	$g‘S”v”PÜt
+() const;
+
+54 
+QSŒšg
+ 
+	$g‘U£rLogš
+() const;
+
+55 
+QSŒšg
+ 
+	$g‘U£rPasswÜd
+() const;
+
+57 
+sigÇls
+:
+
+58 
+	`¡©eChªged
+();
+
+59 
+	`gameResuÉ
+Ğ
+GameResuÉ
+ 
+»suÉ
+ );
+
+60 
+	`gameE¼Ü
+Ğ
+GameE¼ÜMes§ge
+ 
+mes§ge
+ );
+
+61 
+	`gameOµÚ’t
+ĞcÚ¡ 
+QSŒšg
+& 
+Çme
+ );
+
+63 
+´iv©e
+ 
+¦Ùs
+:
+
+64 
+	`ÚD©aReûived
+();
+
+65 
+	`ÚCÚÃùed
+();
+
+66 
+	`ÚE¼Ü
+Ğ
+QAb¡¿ùSock‘
+::
+Sock‘E¼Ü
+ 
+sock‘E¼Ü
+ );
+
+68 
+´iv©e
+:
+
+69 
+	`·r£D©a
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+70 
+boŞ
+ 
+	`·r£Pšg
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+71 
+boŞ
+ 
+	`·r£Found
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+72 
+boŞ
+ 
+	`·r£Go
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+73 
+boŞ
+ 
+	`·r£GameResuÉ
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+74 
+boŞ
+ 
+	`·r£F›lds
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+75 
+boŞ
+ 
+	`·r£E¼ÜInfo
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+76 
+boŞ
+ 
+	`·r£WrÚgS‹p
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+77 
+boŞ
+ 
+	`·r£WrÚgF›ld
+ĞcÚ¡ 
+QSŒšg
+& 
+d©a
+ );
+
+78 
+	`¶aûShAtRªdom
+Ğ
+size
+ );
+
+79 
+	`m¬kSh
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+, 
+boŞ
+ 
+©EÃmyF›ld
+ = 
+çl£
+ );
+
+80 
+	`m¬kEÃmyPošt
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+ );
+
+81 
+	`»adCÚfig
+();
+
+82 
+	`§veCÚfig
+();
+
+83 
+boŞ
+ 
+	`checkE¼Ü
+(cÚ¡ 
+QSŒšg
+&,const QString&);
+
+84 
+	`em™E¼Ü
+(
+GameE¼ÜMes§ge
+ 
+”rÜ
+);
+
+87 
+´iv©e
+:
+
+88 
+QTıSock‘
+* 
+ş›Á
+;
+
+89 
+Mod–
+* 
+mod–
+;
+
+90 
+QHo¡Add»ss
+ 
+£rv”Add»ss
+;
+
+91 
+qušt16
+ 
+£rv”PÜt
+;
+
+92 
+boŞ
+ 
+cÚÃùiÚE¼Ü
+;
+
+93 
+PÏySound
+* 
+h™Sound
+;
+
+94 
+PÏySound
+* 
+missSound
+;
+
+	@client/Defines.h
+
+1 #´agm¨
+Úû
+
+
+3 cÚ¡ 
+	gMYFIELD_X
+ = 40;
+
+4 cÚ¡ 
+	gMYFIELD_Y
+ = 39;
+
+5 cÚ¡ 
+	gENEMYFIELD_X
+ = 322;
+
+6 cÚ¡ 
+	gENEMYFIELD_Y
+ = 39;
+
+7 cÚ¡ 
+	gFIELD_WIDTH
+ = 216;
+
+8 cÚ¡ 
+	gFIELD_HEIGHT
+ = 217;
+
+	@client/Field.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QVeùÜ
+>
+
+3 
+	~<QDebug
+>
+
+4 
+	~<QSŒšg
+>
+
+6 
+	eC–l
+
+
+8 
+	mCL_CLEAR
+ = 0,
+
+9 
+	mCL_SHIP
+,
+
+10 
+	mCL_DOT
+,
+
+11 
+	mCL_HALF
+
+
+14 şas 
+	cF›ld
+
+
+16 
+	mpublic
+:
+
+17 
+F›ld
+();
+
+18 ~
+F›ld
+();
+
+19 
+C–l
+ 
+g‘C–l
+Ğ
+x
+, 
+y
+ );
+
+20 
+£tC–l
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+ );
+
+21 
+QSŒšg
+ 
+g‘F›ld
+();
+
+22 
+ş—r
+();
+
+24 
+	m´iv©e
+:
+
+25 
+QVeùÜ
+<
+C–l
+> 
+f›ld
+;
+
+	@client/Images.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QM­
+>
+
+3 
+	~<QImage
+>
+
+4 
+	~<QSŒšg
+>
+
+6 şas 
+	cImages
+
+
+8 
+	mpublic
+:
+
+9 
+Images
+();
+
+10 
+lßd
+();
+
+11 
+	mQImage
+& 
+g‘
+ĞcÚ¡ 
+QSŒšg
+& 
+imgName
+ );
+
+12 
+boŞ
+ 
+isLßded
+();
+
+14 
+	m´iv©e
+:
+
+15 
+QM­
+<
+QSŒšg
+, 
+	mQImage
+> 
+	mimages
+;
+
+16 
+boŞ
+ 
+	misLßded_
+;
+
+19 
+Images
+ 
+piùu»s
+;
+
+	@client/Model.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QSŒšg
+>
+
+3 
+	~<QObjeù
+>
+
+4 
+	~"F›ld.h
+"
+
+6 
+	eS‹
+
+
+8 
+	mST_PLACING_SHIPS
+,
+
+9 
+	mST_WAITING_STEP
+,
+
+10 
+	mST_MAKING_STEP
+
+
+13 şas 
+	cMod–
+: 
+public
+ 
+QObjeù
+
+
+15 
+Q_OBJECT
+
+
+16 
+public
+:
+
+17 
+Mod–
+();
+
+18 ~
+Mod–
+();
+
+19 
+S‹
+ 
+	$g‘S‹
+() const;
+
+20 
+	`£tS‹
+Ğ
+S‹
+ );
+
+21 
+C–l
+ 
+	$g‘MyC–l
+Ğ
+x
+, 
+y
+ ) const;
+
+22 
+	`£tMyC–l
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+ );
+
+23 
+QSŒšg
+ 
+	$g‘MyF›ld
+() const;
+
+24 
+C–l
+ 
+	$g‘EÃmyC–l
+Ğ
+x
+, 
+y
+ ) const;
+
+25 
+	`£tEÃmyC–l
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+ );
+
+26 
+QSŒšg
+ 
+	$g‘EÃmyF›ld
+() const;
+
+27 
+	`£tLogš
+ĞcÚ¡ 
+QSŒšg
+& 
+¡r
+ );
+
+28 
+	`£tPasswÜd
+ĞcÚ¡ 
+QSŒšg
+& 
+¡r
+ );
+
+29 
+QSŒšg
+ 
+	$g‘Logš
+() const;
+
+30 
+QSŒšg
+ 
+	$g‘PasswÜd
+() const;
+
+31 
+boŞ
+ 
+	$checkMyF›ld
+() const;
+
+32 
+	`ş—rEÃmyF›ld
+();
+
+33 
+	`ş—rMyF›ld
+();
+
+35 
+´iv©e
+:
+
+36 
+	$shNum
+Ğ
+size
+ ) const;
+
+37 
+boŞ
+ 
+	$isSh
+Ğ
+size
+, 
+x
+, 
+y
+ ) const;
+
+39 
+´iv©e
+:
+
+40 
+F›ld
+* 
+myF›ld
+, *
+’emyF›ld
+;
+
+41 
+S‹
+ 
+¡©e
+;
+
+42 
+QSŒšg
+ 
+logš
+, 
+·ss
+;
+
+	@client/Utility.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QPošt
+>
+
+3 
+	~<QDebug
+>
+
+4 
+	~"Defšes.h
+"
+
+6 
+QPošt
+ 
+g‘MyF›ldCoÜd
+ĞcÚ¡ QPošt& 
+pos
+ );
+
+7 
+QPošt
+ 
+g‘EÃmyF›ldCoÜd
+ĞcÚ¡ QPošt& 
+pos
+ );
+
+	@client/mainwindow.h
+
+1 #iâdeà
+MAINWINDOW_H
+
+
+2 
+	#MAINWINDOW_H
+
+
+	)
+
+4 
+	~<QMašWšdow
+>
+
+5 
+	~<QImage
+>
+
+6 
+	~<QPaš‹r
+>
+
+7 
+	~<QPošt
+>
+
+8 
+	~<QMou£Ev’t
+>
+
+9 
+	~<QDebug
+>
+
+10 
+	~<QtN‘wÜk/QTıSock‘
+>
+
+11 
+	~<QSŒšg
+>
+
+12 
+	~<QTime
+>
+
+13 
+	~<QVBoxLayout
+>
+
+14 
+	~"Images.h
+"
+
+15 
+	~"Mod–.h
+"
+
+16 
+	~"CÚŒŞËr.h
+"
+
+17 
+	~"Defšes.h
+"
+
+18 
+	~"ut/PÏySound.h
+"
+
+20 
+Çme¥aû
+ 
+	gUi
+
+
+22 
+şass
+ 
+	gMašWšdow
+;
+
+25 şas 
+	cMašWšdow
+ : 
+public
+ 
+QMašWšdow
+
+
+27 
+Q_OBJECT
+
+
+29 
+public
+:
+
+30 
+ex¶ic™
+ 
+MašWšdow
+Ğ
+QWidg‘
+* 
+·»Á
+ = 0 );
+
+31 ~
+MašWšdow
+();
+
+33 
+	m´Ùeùed
+:
+
+34 
+·štEv’t
+Ğ
+QPaštEv’t
+* 
+ev’t
+ );
+
+35 
+mou£P»ssEv’t
+Ğ
+QMou£Ev’t
+* 
+ev
+ );
+
+36 
+şo£Ev’t
+Ğ
+QClo£Ev’t
+* 
+ev’t
+ );
+
+38 
+´iv©e
+ 
+	m¦Ùs
+:
+
+39 
+»d¿w
+();
+
+40 
+showGameResuÉ
+Ğ
+GameResuÉ
+ 
+»suÉ
+ );
+
+41 
+showGameE¼Ü
+Ğ
+GameE¼ÜMes§ge
+ 
+mes§ge
+ );
+
+42 
+chªgeGameOµÚ’t
+ĞcÚ¡ 
+QSŒšg
+& 
+Çme
+ );
+
+43 
+Ú_aùiÚS¹_aùiv©ed
+();
+
+44 
+Ú_aùiÚQu™_Œigg”ed
+();
+
+45 
+Ú_aùiÚCË¬_Œigg”ed
+();
+
+46 
+Ú_aùiÚRªdom_Œigg”ed
+();
+
+47 
+Ú_aùiÚL—ve_aùiv©ed
+();
+
+48 
+Ú_aùiÚAbout_Œigg”ed
+();
+
+50 
+	m´iv©e
+:
+
+51 
+£tStus
+ĞcÚ¡ 
+QSŒšg
+& 
+¡©us
+ );
+
+53 
+	m´iv©e
+:
+
+54 
+QImage
+ 
+myF›ldImage
+();
+
+55 
+QImage
+ 
+’emyF›ldImage
+();
+
+56 
+QImage
+ 
+g‘F›ldImage
+( );
+
+58 
+	m´iv©e
+:
+
+59 
+Ui
+::
+MašWšdow
+* 
+ui
+;
+
+60 
+S‹
+ 
+	m¡©e
+;
+
+61 
+Mod–
+* 
+	mmod–
+;
+
+62 
+CÚŒŞËr
+* 
+	mcÚŒŞËr
+;
+
+	@client/ui_mainwindow.h
+
+9 #iâdeà
+UI_MAINWINDOW_H
+
+
+10 
+	#UI_MAINWINDOW_H
+
+
+	)
+
+12 
+	~<QtCÜe/QV¬ŸÁ
+>
+
+13 
+	~<QtGui/QAùiÚ
+>
+
+14 
+	~<QtGui/QAµliÿtiÚ
+>
+
+15 
+	~<QtGui/QBu‰ÚGroup
+>
+
+16 
+	~<QtGui/QH—d”V›w
+>
+
+17 
+	~<QtGui/QLab–
+>
+
+18 
+	~<QtGui/QMašWšdow
+>
+
+19 
+	~<QtGui/QM’u
+>
+
+20 
+	~<QtGui/QM’uB¬
+>
+
+21 
+	~<QtGui/QWidg‘
+>
+
+23 
+QT_BEGIN_NAMESPACE
+
+
+25 şas 
+	cUi_MašWšdow
+
+
+27 
+	mpublic
+:
+
+28 
+QAùiÚ
+ *
+aùiÚS¹
+;
+
+29 
+QAùiÚ
+ *
+	maùiÚQu™
+;
+
+30 
+QAùiÚ
+ *
+	maùiÚCË¬
+;
+
+31 
+QAùiÚ
+ *
+	maùiÚRªdom
+;
+
+32 
+QAùiÚ
+ *
+	maùiÚL—ve
+;
+
+33 
+QAùiÚ
+ *
+	maùiÚAbout
+;
+
+34 
+QWidg‘
+ *
+	mûÁ¿lWidg‘
+;
+
+35 
+QLab–
+ *
+	mÏb–Stus
+;
+
+36 
+QLab–
+ *
+	mÏb–OµÚ’t
+;
+
+37 
+QM’uB¬
+ *
+	mm’uB¬
+;
+
+38 
+QM’u
+ *
+	mm’uFe
+;
+
+39 
+QM’u
+ *
+	mm’uF›ld
+;
+
+40 
+QM’u
+ *
+	mm’uAbout
+;
+
+42 
+	$£tupUi
+(
+QMašWšdow
+ *
+MašWšdow
+)
+
+44 ià(
+MašWšdow
+->
+	`objeùName
+().
+	`isEm±y
+())
+
+45 
+MašWšdow
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("MainWindow"));
+
+46 
+MašWšdow
+->
+	`»size
+(555, 309);
+
+47 
+MašWšdow
+->
+	`£tMšimumSize
+(
+	`QSize
+(555, 309));
+
+48 
+MašWšdow
+->
+	`£tMaximumSize
+(
+	`QSize
+(555, 309));
+
+49 
+aùiÚS¹
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+50 
+aùiÚS¹
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionStart"));
+
+51 
+aùiÚQu™
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+52 
+aùiÚQu™
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionQuit"));
+
+53 
+aùiÚCË¬
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+54 
+aùiÚCË¬
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionClear"));
+
+55 
+aùiÚRªdom
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+56 
+aùiÚRªdom
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionRandom"));
+
+57 
+aùiÚL—ve
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+58 
+aùiÚL—ve
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionLeave"));
+
+59 
+aùiÚAbout
+ = 
+Ãw
+ 
+	`QAùiÚ
+(
+MašWšdow
+);
+
+60 
+aùiÚAbout
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("actionAbout"));
+
+61 
+ûÁ¿lWidg‘
+ = 
+Ãw
+ 
+	`QWidg‘
+(
+MašWšdow
+);
+
+62 
+ûÁ¿lWidg‘
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("centralWidget"));
+
+63 
+Ïb–Stus
+ = 
+Ãw
+ 
+	`QLab–
+(
+ûÁ¿lWidg‘
+);
+
+64 
+Ïb–Stus
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("labelStatus"));
+
+65 
+Ïb–Stus
+->
+	`£tGeom‘ry
+(
+	`QReù
+(40, 260, 531, 21));
+
+66 
+QFÚt
+ 
+fÚt
+;
+
+67 
+fÚt
+.
+	`£tPoštSize
+(11);
+
+68 
+fÚt
+.
+	`£tBŞd
+(
+Œue
+);
+
+69 
+fÚt
+.
+	`£tIlic
+(
+çl£
+);
+
+70 
+fÚt
+.
+	`£tUnd”lše
+(
+çl£
+);
+
+71 
+fÚt
+.
+	`£tWeight
+(75);
+
+72 
+fÚt
+.
+	`£tSŒikeOut
+(
+çl£
+);
+
+73 
+fÚt
+.
+	`£tK”nšg
+(
+Œue
+);
+
+74 
+Ïb–Stus
+->
+	`£tFÚt
+(
+fÚt
+);
+
+75 
+Ïb–OµÚ’t
+ = 
+Ãw
+ 
+	`QLab–
+(
+ûÁ¿lWidg‘
+);
+
+76 
+Ïb–OµÚ’t
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("labelOpponent"));
+
+77 
+Ïb–OµÚ’t
+->
+	`£tGeom‘ry
+(
+	`QReù
+(330, 260, 201, 21));
+
+78 
+Ïb–OµÚ’t
+->
+	`£tFÚt
+(
+fÚt
+);
+
+79 
+Ïb–OµÚ’t
+->
+	`£tAlignm’t
+(
+Qt
+::
+AlignRight
+|Qt::
+AlignT¿šg
+|Qt::
+AlignVC’‹r
+);
+
+80 
+MašWšdow
+->
+	`£tC’Œ®Widg‘
+(
+ûÁ¿lWidg‘
+);
+
+81 
+m’uB¬
+ = 
+Ãw
+ 
+	`QM’uB¬
+(
+MašWšdow
+);
+
+82 
+m’uB¬
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("menuBar"));
+
+83 
+m’uB¬
+->
+	`£tGeom‘ry
+(
+	`QReù
+(0, 0, 555, 24));
+
+84 
+m’uFe
+ = 
+Ãw
+ 
+	`QM’u
+(
+m’uB¬
+);
+
+85 
+m’uFe
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("menuFile"));
+
+86 
+m’uF›ld
+ = 
+Ãw
+ 
+	`QM’u
+(
+m’uB¬
+);
+
+87 
+m’uF›ld
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("menuField"));
+
+88 
+m’uAbout
+ = 
+Ãw
+ 
+	`QM’u
+(
+m’uB¬
+);
+
+89 
+m’uAbout
+->
+	`£tObjeùName
+(
+QSŒšg
+::
+	`äomUtf8
+("menuAbout"));
+
+90 
+MašWšdow
+->
+	`£tM’uB¬
+(
+m’uB¬
+);
+
+92 
+m’uB¬
+->
+	`addAùiÚ
+(
+m’uFe
+->
+	`m’uAùiÚ
+());
+
+93 
+m’uB¬
+->
+	`addAùiÚ
+(
+m’uF›ld
+->
+	`m’uAùiÚ
+());
+
+94 
+m’uB¬
+->
+	`addAùiÚ
+(
+m’uAbout
+->
+	`m’uAùiÚ
+());
+
+95 
+m’uFe
+->
+	`addAùiÚ
+(
+aùiÚS¹
+);
+
+96 
+m’uFe
+->
+	`addAùiÚ
+(
+aùiÚL—ve
+);
+
+97 
+m’uFe
+->
+	`addS•¬©Ü
+();
+
+98 
+m’uFe
+->
+	`addAùiÚ
+(
+aùiÚQu™
+);
+
+99 
+m’uF›ld
+->
+	`addAùiÚ
+(
+aùiÚCË¬
+);
+
+100 
+m’uF›ld
+->
+	`addAùiÚ
+(
+aùiÚRªdom
+);
+
+101 
+m’uAbout
+->
+	`addAùiÚ
+(
+aùiÚAbout
+);
+
+103 
+	`»Œª¦©eUi
+(
+MašWšdow
+);
+
+105 
+QM‘aObjeù
+::
+	`cÚÃùSlÙsByName
+(
+MašWšdow
+);
+
+108 
+	$»Œª¦©eUi
+(
+QMašWšdow
+ *
+MašWšdow
+)
+
+110 
+MašWšdow
+->
+	`£tWšdowT™Ë
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "S—C¿á", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+111 
+aùiÚS¹
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "S¹", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+112 
+aùiÚS¹
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+S", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+113 
+aùiÚQu™
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "Qu™", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+114 
+aùiÚQu™
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+Q", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+115 
+aùiÚCË¬
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CË¬", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+116 
+aùiÚCË¬
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+C", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+117 
+aùiÚRªdom
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "Rªdom", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+118 
+aùiÚRªdom
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+R", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+119 
+aùiÚL—ve
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "L—ve", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+120 
+aùiÚL—ve
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+L", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+121 
+aùiÚAbout
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "AbouˆS—C¿á", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+122 
+aùiÚAbout
+->
+	`£tShÜtcut
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "CŒl+A", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+123 
+Ïb–Stus
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "Stus:…Ïcšg shs", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+124 
+Ïb–OµÚ’t
+->
+	`£tText
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "OµÚ’t: ", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+125 
+m’uFe
+->
+	`£tT™Ë
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "Game", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+126 
+m’uF›ld
+->
+	`£tT™Ë
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "F›ld", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+127 
+m’uAbout
+->
+	`£tT™Ë
+(
+QAµliÿtiÚ
+::
+	`Œª¦©e
+("MašWšdow", "About", 0, QAµliÿtiÚ::
+UnicodeUTF8
+));
+
+128 
+	}
+}
+
+132 
+Çme¥aû
+ 
+	gUi
+ {
+
+133 şas 
+	cMašWšdow
+: 
+public
+ 
+Ui_MašWšdow
+ {};
+
+136 
+	gQT_END_NAMESPACE
+
+
+	@client/util/PlaySound.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QTh»ad
+>
+
+5 
+Çme¥aû
+ 
+	gPÏySoundS·û
+
+
+7 
+şass
+ 
+	gPÏySoundTh»ad
+;
+
+10 #ifdeà
+Q_OS_LINUX
+
+
+11 
+	~"PÏySound_nix.h
+"
+
+13 
+	~"PÏySound_wš.h
+"
+
+16 şas 
+	cPÏySound
+ : 
+public
+ 
+QObjeù
+
+
+18 
+Q_OBJECT
+
+
+19 
+public
+:
+
+20 
+ex¶ic™
+ 
+PÏySound
+Ğ
+QObjeù
+* 
+·»Á
+ = 0 );
+
+21 
+ex¶ic™
+ 
+PÏySound
+ĞcÚ¡ 
+QSŒšg
+& 
+feName
+, 
+QObjeù
+* 
+·»Á
+ = 0 );
+
+22 ~
+PÏySound
+();
+
+24 
+public
+ 
+	m¦Ùs
+:
+
+25 
+¶ay
+();
+
+26 
+¶ay
+ĞcÚ¡ 
+QSŒšg
+& 
+feName
+ );
+
+27 
+¡İ
+();
+
+29 
+	m´iv©e
+:
+
+30 
+PÏySoundS·û
+::
+PÏySoundTh»ad
+* 
+soundTh»ad_
+;
+
+	@client/util/PlaySound_nix.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~<QFe
+>
+
+6 
+	~<®§/asoundlib.h
+>
+
+7 
+	~"PÏySound.h
+"
+
+9 
+Çme¥aû
+ 
+	gPÏySoundS·û
+
+
+14 
+u_št32_t
+ 
+	gdwSize
+;
+
+15 
+u_št16_t
+ 
+	gwFÜm©Tag
+;
+
+16 
+u_št16_t
+ 
+	gwChªÃls
+;
+
+17 
+u_št32_t
+ 
+	gdwSam¶esP”Sec
+;
+
+18 
+u_št32_t
+ 
+	gdwAvgBy‹sP”Sec
+;
+
+19 
+u_št16_t
+ 
+	gwBlockAlign
+;
+
+20 
+u_št16_t
+ 
+	gwB™sP”Sam¶e
+;
+
+21 } 
+	tWAVEFORMAT
+;
+
+23 şas 
+	cPÏySoundTh»ad
+ : 
+public
+ 
+QTh»ad
+
+
+25 
+Q_OBJECT
+
+
+26 
+public
+:
+
+27 
+ex¶ic™
+ 
+PÏySoundTh»ad
+Ğ
+QObjeù
+* 
+·»Á
+ = 0 );
+
+28 
+ex¶ic™
+ 
+PÏySoundTh»ad
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+, 
+QObjeù
+* 
+·»Á
+ = 0 );
+
+29 ~
+PÏySoundTh»ad
+();
+
+30 cÚ¡ 
+	gQSŒšg
+& 
+soundFe
+() const;
+
+31 
+£tSoundFe
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+ );
+
+33 
+public
+ 
+	g¦Ùs
+:
+
+34 
+run
+();
+
+35 
+qu™
+();
+
+36 
+‹rmš©e
+();
+
+38 
+	g´iv©e
+:
+
+39 
+boŞ
+ 
+š™Sound
+ĞcÚ¡ 
+QSŒšg
+& 
+feName
+ );
+
+41 
+	g´iv©e
+:
+
+42 
+QSŒšg
+ 
+soundFeName_
+;
+
+43 
+QFe
+ 
+	gsf
+;
+
+44 
+boŞ
+ 
+	gaboutToQu™
+;
+
+45 
+boŞ
+ 
+	gsoundIn™ed
+;
+
+47 
+	g´iv©e
+:
+
+48 
+¢d_pcm_t
+* 
+hªdË
+;
+
+49 
+¢d_pcm_säames_t
+ 
+	gäames
+;
+
+50 
+¢d_pcm_uäames_t
+ 
+	gchunk_size
+;
+
+51 
+¢d_pcm_uäames_t
+ 
+	gbufãr_size
+;
+
+52 
+size_t
+ 
+	gb™s_³r_§m¶e
+;
+
+53 
+size_t
+ 
+	gb™s_³r_äame
+;
+
+54 
+size_t
+ 
+	gchunk_by‹s
+;
+
+56 
+u_lÚg
+ 
+	g§m¶es
+;
+
+57 
+u_lÚg
+ 
+	gd©a¡¬t
+;
+
+59 
+WAVEFORMAT
+ 
+	gwavefÜm©
+;
+
+	@client/util/PlaySound_win.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~<QSound
+>
+
+6 
+	~<QTempÜ¬yFe
+>
+
+7 
+	~"PÏySound.h
+"
+
+9 
+Çme¥aû
+ 
+	gPÏySoundS·û
+
+
+12 şas 
+	cPÏySoundTh»ad
+ : 
+public
+ 
+QTh»ad
+
+
+14 
+Q_OBJECT
+
+
+15 
+public
+:
+
+16 
+ex¶ic™
+ 
+PÏySoundTh»ad
+Ğ
+QObjeù
+* 
+·»Á
+ = 0 );
+
+17 
+ex¶ic™
+ 
+PÏySoundTh»ad
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+, 
+QObjeù
+* 
+·»Á
+ = 0 );
+
+18 cÚ¡ 
+	gQSŒšg
+& 
+soundFe
+() const;
+
+19 
+£tSoundFe
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+ );
+
+21 
+public
+ 
+	g¦Ùs
+:
+
+22 
+run
+();
+
+23 
+qu™
+();
+
+25 
+	g´iv©e
+:
+
+26 
+boŞ
+ 
+š™Sound
+ĞcÚ¡ 
+QSŒšg
+& 
+feName
+ );
+
+27 
+boŞ
+ 
+cİyFromResourû
+ĞcÚ¡ 
+QSŒšg
+& 
+feName
+ );
+
+29 
+	g´iv©e
+:
+
+30 
+QSŒšg
+ 
+soundFeName_
+;
+
+31 
+QTempÜ¬yFe
+* 
+	gtmpFe_
+;
+
+32 
+QSound
+* 
+	gsound_
+;
+
+	@server/Application.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QCÜeAµliÿtiÚ
+>
+
+4 
+	~"S”v”.h
+"
+
+6 şas 
+	cAµliÿtiÚ
+ : 
+public
+ 
+QCÜeAµliÿtiÚ
+
+
+8 
+Q_OBJECT
+
+
+9 
+public
+:
+
+10 
+ex¶ic™
+ 
+AµliÿtiÚ
+Ğ& 
+¬gc
+, * 
+¬gv
+[] );
+
+11 ~
+AµliÿtiÚ
+();
+
+12 
+boŞ
+ 
+š™
+();
+
+14 
+	m´iv©e
+:
+
+15 
+·r£CmdLše
+();
+
+16 
+boŞ
+ 
+·r£O±iÚs
+ĞcÚ¡ 
+QSŒšg
+& 
+¬g
+ );
+
+17 
+boŞ
+ 
+·r£O±iÚsW™hP¬am
+ĞcÚ¡ 
+QSŒšg
+& 
+¬g
+, cÚ¡ QSŒšg& 
+·¿m
+ );
+
+18 
+boŞ
+ 
+¥awnS”v”
+();
+
+20 
+boŞ
+ 
+isO±iÚ
+ĞcÚ¡ 
+QSŒšg
+& 
+¬g
+, cÚ¡ QSŒšg& 
+İtiÚ
+ );
+
+21 
+boŞ
+ 
+isO±iÚ
+(
+
+22 cÚ¡ 
+QSŒšg
+& 
+¬g
+,
+
+23 cÚ¡ 
+QSŒšg
+& 
+İtiÚ1
+,
+
+24 cÚ¡ 
+QSŒšg
+& 
+İtiÚ2
+
+
+27 
+	m´iv©e
+:
+
+28 
+S”v”
+* 
+£rv”_
+;
+
+29 
+boŞ
+ 
+	mfÜûQu™_
+;
+
+	@server/Client.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QtN‘wÜk/QTıSock‘
+>
+
+4 
+	~<ùime
+>
+
+5 
+	~"F›ld.h
+"
+
+7 şas 
+	cCl›Á
+
+
+9 
+	mpublic
+:
+
+10 
+QM­
+<, 
+	tCl›Á
+>::
+	t™”©Ü
+ 
+	tCl›ÁI‹¿tÜ
+;
+
+12 
+	eCl›ÁStus
+
+
+14 
+	mST_CONNECTED
+ = 0,
+
+15 
+	mST_AUTHORIZED
+,
+
+16 
+	mST_READY
+,
+
+17 
+	mST_WAITING_STEP
+,
+
+18 
+	mST_MAKING_STEP
+,
+
+19 
+	mST_DISCONNECTED
+
+
+22 
+ex¶ic™
+ 
+Cl›Á
+();
+
+23 ~
+Cl›Á
+();
+
+25 
+£nd
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+ );
+
+27 
+QTıSock‘
+* 
+	gsock‘
+;
+
+28 
+Cl›ÁStus
+ 
+	g¡©us
+;
+
+29 
+Cl›ÁI‹¿tÜ
+ 
+	g¶ayšgW™h
+;
+
+30 
+QSŒšg
+ 
+	glogš
+;
+
+32 
+£tF›ld
+ĞcÚ¡ 
+QSŒšg
+& 
+f›ld
+, 
+shSize
+ );
+
+33 
+F›ld
+* 
+f›ld
+();
+
+34 
+£tS“n
+();
+
+35 
+size_t
+ 
+Ï¡S“n
+();
+
+37 
+	g´iv©e
+:
+
+38 
+F›ld
+* 
+f›ld_
+;
+
+39 
+size_t
+ 
+	gÏ¡S“n_
+;
+
+42 
+	gQM­
+<, 
+	tCl›Á
+> 
+	tCl›Ás
+;
+
+43 
+	gCl›Ás
+::
+	t™”©Ü
+ 
+	tCl›ÁsI‹¿tÜ
+;
+
+	@server/Constants.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QHo¡Add»ss
+>
+
+5 cÚ¡ 
+qušt16
+ 
+	gDEFAULT_SEARCH_INTERVAL
+ = 3000;
+
+6 cÚ¡ 
+qušt16
+ 
+	gDEFAULT_SERVER_PORT
+ = 1234;
+
+7 cÚ¡ 
+QHo¡Add»ss
+ 
+	gDEFAULT_SERVER_ADDRESS
+ = QHo¡Add»ss::
+Any
+;
+
+8 cÚ¡ 
+QSŒšg
+ 
+	gDEFAULT_STAT_FILE
+ = "stats";
+
+9 cÚ¡ 
+QSŒšg
+ 
+	gDEFAULT_AUTH_FILE
+ = "authorized";
+
+10 cÚ¡ 
+QSŒšg
+ 
+	gDEFAULT_GUEST_ACCOUNT
+ = "guest";
+
+11 cÚ¡ 
+qušt16
+ 
+	gDEFAULT_SHIP_SIZE
+ = 4;
+
+12 cÚ¡ 
+qušt16
+ 
+	gLOGIN_LENGTH_MIN
+ = 2;
+
+13 cÚ¡ 
+qušt16
+ 
+	gLOGIN_LENGTH_MAX
+ = 16;
+
+14 cÚ¡ 
+qušt16
+ 
+	gPASSWORD_LENGTH_MIN
+ = 4;
+
+15 cÚ¡ 
+qušt16
+ 
+	gPASSWORD_LENGTH_MAX
+ = 32;
+
+16 cÚ¡ 
+qušt16
+ 
+	gDEFAULT_INACTIVE_MIN
+ = 30;
+
+17 cÚ¡ 
+qušt16
+ 
+	gDEFAULT_INACTIVE_MAX
+ = 65;
+
+	@server/Field.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QVeùÜ
+>
+
+4 
+	~<QSck
+>
+
+5 
+	~<QPošt
+>
+
+6 
+	~"CÚ¡ªts.h
+"
+
+8 şas 
+	cF›ld
+
+
+10 
+	mpublic
+:
+
+11 
+	eC–l
+
+
+13 
+CI_CLEAR
+ = 0,
+
+14 
+	mCI_CENTER
+,
+
+15 
+	mCI_TOP
+,
+
+16 
+	mCI_BOTTOM
+,
+
+17 
+	mCI_VMIDDLE
+,
+
+18 
+	mCI_LEFT
+,
+
+19 
+	mCI_RIGHT
+,
+
+20 
+	mCI_HMIDDLE
+,
+
+21 
+	mC–lShsTy³CouÁ
+,
+
+22 
+	mCI_DOT
+ = 100,
+
+23 
+	mCI_DAMAGED
+
+
+26 
+	gQVeùÜ
+<
+	tC–l
+> 
+	tC–ls
+;
+
+27 
+	gQVeùÜ
+<> 
+	tShsTy³Li¡
+;
+
+28 
+	gQSck
+<
+	tQPošt
+> 
+	tShÙs
+;
+
+30 
+	gpublic
+:
+
+31 
+F›ld
+Ğ
+shSize
+ = 
+DEFAULT_SHIP_SIZE
+ );
+
+32 
+š™F›ld
+ĞcÚ¡ 
+QSŒšg
+& 
+¡ršgF›ld
+ );
+
+33 
+C–l
+ 
+	$g‘C–l
+Ğ
+x
+, 
+y
+ ) const;
+
+34 
+	`£tC–l
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+ );
+
+35 
+boŞ
+ 
+	$checkF›ld
+() const;
+
+36 
+qušt32
+ 
+	$g‘ShSize
+() const;
+
+37 
+qušt32
+ 
+	$g‘F›ldL’gth
+() const;
+
+38 
+qušt32
+ 
+	$g‘F›ldSize
+() const;
+
+39 
+qušt32
+ 
+	$g‘ShsCouÁ
+() const;
+
+40 
+boŞ
+ 
+	$isAÎKËd
+() const;
+
+41 
+boŞ
+ 
+	`makeShÙ
+Ğ
+x
+, 
+y
+, 
+ShÙs
+& 
+klShÙs
+ );
+
+42 
+	`addKËdSh
+Ğ
+shSize
+ );
+
+44 
+	$showF›ld
+() const;
+
+46 
+´iv©e
+:
+
+47 
+	`cÚv”tF›ld
+();
+
+48 
+C–l
+ 
+	$g‘C–lPriv©e
+Ğ
+x
+, 
+y
+, cÚ¡ 
+C–ls
+& 
+ûÎs
+ ) const;
+
+49 
+	$£tC–lPriv©e
+Ğ
+x
+, 
+y
+, 
+C–l
+ 
+ûÎ
+, 
+C–ls
+& 
+ûÎs
+ ) const;
+
+51 
+´iv©e
+:
+
+52 
+shSize_
+;
+
+53 
+f›ldL’gth_
+;
+
+54 
+C–ls
+ 
+f›ld_
+;
+
+55 
+ShsTy³Li¡
+ 
+kËdShs_
+;
+
+56 
+	}
+};
+
+	@server/Server.h
+
+1 #´agm¨
+Úû
+
+
+3 
+	~<QObjeù
+>
+
+4 
+	~<QHo¡Add»ss
+>
+
+5 
+	~<QtN‘wÜk/QTıS”v”
+>
+
+6 
+	~"CÚ¡ªts.h
+"
+
+7 
+	~"Cl›Á.h
+"
+
+8 
+	~"Sti¡ics.h
+"
+
+10 şas 
+	cS”v”
+ : 
+public
+ 
+QObjeù
+
+
+12 
+Q_OBJECT
+
+
+13 
+public
+:
+
+14 
+	ePrÙocŞV”siÚ
+
+
+16 
+PV_ALPHA
+ = 1,
+
+17 
+	mPV_BETA
+,
+
+18 
+	mPV_RELEASE
+
+
+21 
+	eCheckU£rStus
+
+
+23 
+	gCUS_NOTFOUND
+ = -1,
+
+24 
+	gCUS_OK
+ = 0,
+
+25 
+	gCUS_WRONGPASS
+ = 1
+
+28 
+ex¶ic™
+ 
+S”v”
+Ğ
+QObjeù
+* 
+·»Á
+ = 0 );
+
+29 ~
+S”v”
+();
+
+31 
+boŞ
+ 
+¥awn
+();
+
+32 
+boŞ
+ 
+¥awn
+ĞcÚ¡ 
+QSŒšg
+& 
+add»ss
+, 
+qušt16
+ 
+pÜt
+ = 
+DEFAULT_SERVER_PORT
+ );
+
+33 
+boŞ
+ 
+¥awn
+(
+
+34 cÚ¡ 
+QHo¡Add»ss
+& 
+add»ss
+,
+
+35 
+qušt16
+ 
+pÜt
+ = 
+DEFAULT_SERVER_PORT
+
+
+38 
+£tGue¡AÎowed
+Ğ
+boŞ
+ 
+¡©e
+ );
+
+39 
+boŞ
+ 
+	$isGue¡AÎowed
+() const;
+
+40 
+	`£tRegi¡¿tiÚAÎowed
+Ğ
+boŞ
+ 
+¡©e
+ );
+
+41 
+boŞ
+ 
+	$isRegi¡¿tiÚAÎowed
+() const;
+
+42 
+	`£tAdd»ss
+ĞcÚ¡ 
+QSŒšg
+& 
+add»ss
+ );
+
+43 
+QSŒšg
+ 
+	$add»ss
+() const;
+
+44 
+	$add»ss
+Ğ
+QHo¡Add»ss
+& 
+addr
+ ) const;
+
+45 
+	`£tPÜt
+Ğ
+qušt16
+ 
+pÜt
+ );
+
+46 
+	$pÜt
+() const;
+
+47 
+	`£tAuthFe
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+ );
+
+48 cÚ¡ 
+QSŒšg
+& 
+	$authFe
+() const;
+
+49 
+	`£tStFe
+ĞcÚ¡ 
+QSŒšg
+& 
+f’ame
+ );
+
+50 cÚ¡ 
+QSŒšg
+& 
+	$¡©Fe
+() const;
+
+52 
+´iv©e
+ 
+¦Ùs
+:
+
+53 
+	`Ú_ÃwU£rCÚÃùed
+();
+
+54 
+	`Ú_»c›vedD©a
+();
+
+56 
+´Ùeùed
+:
+
+57 
+	`tim”Ev’t
+Ğ
+QTim”Ev’t
+* 
+ev’t
+ );
+
+59 
+´iv©e
+:
+
+60 
+	`cÚÃùTwoCl›Ás
+(
+
+61 
+Cl›Ás
+::
+™”©Ü
+ 
+ş›Á1
+,
+
+62 
+Cl›Ás
+::
+™”©Ü
+ 
+ş›Á2
+
+
+64 
+	`discÚÃùCl›Á
+Ğ
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+65 
+	`discÚÃùCl›ÁAndRecÜd
+Ğ
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+, 
+boŞ
+ 
+wšÃrStus
+ );
+
+66 
+	`·r£D©a
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+ş›ÁId
+ );
+
+67 
+boŞ
+ 
+	`¡©eAuthÜize
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+68 
+boŞ
+ 
+	`¡©eRec›veF›ld
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+69 
+boŞ
+ 
+	`¡©eRec›vePšg
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+70 
+boŞ
+ 
+	`¡©eRec›veS‹ps
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+71 
+boŞ
+ 
+	`¡©eRec›veStus
+ĞcÚ¡ 
+QSŒšg
+& 
+cmd
+, 
+Cl›ÁsI‹¿tÜ
+ 
+ş›Á
+ );
+
+72 
+boŞ
+ 
+	`checkPrÙocŞV”siÚ
+Ğ
+v”siÚ
+ );
+
+73 
+boŞ
+ 
+	`isU£rCÚÃùed
+(cÚ¡ 
+QSŒšg
+& 
+cmd
+);
+
+74 
+CheckU£rStus
+ 
+	`checkU£rLogš
+(
+
+75 cÚ¡ 
+QSŒšg
+& 
+logš
+,
+
+76 cÚ¡ 
+QSŒšg
+& 
+·sswÜd
+
+
+78 
+boŞ
+ 
+	`»gi¡”U£rLogš
+ĞcÚ¡ 
+QSŒšg
+& 
+logš
+, cÚ¡ QSŒšg& 
+·sswÜd
+ );
+
+79 
+	`»cÜdSessiÚSti¡ic
+(
+
+80 cÚ¡ 
+QSŒšg
+& 
+wšÃr
+,
+
+81 cÚ¡ 
+QSŒšg
+& 
+loo£r
+
+
+84 
+´iv©e
+:
+
+85 
+QTıS”v”
+* 
+tıS”v”_
+;
+
+86 
+boŞ
+ 
+¥awÃd_
+;
+
+87 
+boŞ
+ 
+gue¡AÎowed_
+;
+
+88 
+boŞ
+ 
+»gi¡¿tiÚAÎowed_
+;
+
+89 
+QHo¡Add»ss
+ 
+add»ss_
+;
+
+90 
+qušt16
+ 
+pÜt_
+;
+
+91 
+QSŒšg
+ 
+authFe_
+;
+
+92 
+QSŒšg
+ 
+¡©Fe_
+;
+
+93 
+Cl›Ás
+ 
+ş›Ás_
+;
+
+94 
+Sti¡ics
+ 
+¡©s_
+;
+
+95 
+	}
+};
+
+	@server/Statistics.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<QM­
+>
+
+3 
+	~<QSŒšg
+>
+
+4 
+	~<QFe
+>
+
+5 
+	~<QTextSŒ—m
+>
+
+6 
+	~<QDebug
+>
+
+7 
+	~<QRegExp
+>
+
+9 
+	sPÏy”Sts
+
+
+11 
+	mroundsWÚ
+;
+
+12 
+	mroundsLo¡
+;
+
+15 
+	ssÜtSŒuù
+
+
+17 
+QSŒšg
+ 
+	m¶ay”
+;
+
+18 
+	mroundsLo¡
+;
+
+21 şas 
+	cSti¡ics
+
+
+23 
+	mpublic
+:
+
+24 
+§ve
+ĞcÚ¡ 
+QSŒšg
+& 
+âame
+ );
+
+25 
+lßd
+ĞcÚ¡ 
+QSŒšg
+& 
+âame
+ );
+
+26 
+¶ay”WÚ
+ĞcÚ¡ 
+QSŒšg
+& 
+logš
+ );
+
+27 
+¶ay”Lo¡
+ĞcÚ¡ 
+QSŒšg
+& 
+logš
+ );
+
+28 
+	m´iv©e
+:
+
+29 
+checkPÏy”
+ĞcÚ¡ 
+QSŒšg
+& 
+logš
+ );
+
+31 
+	m´iv©e
+:
+
+32 
+QM­
+<
+QSŒšg
+, 
+	mPÏy”Sts
+> 
+	md©a
+;
+
+	@
+1
+.
+0
+19
+381
+client/AboutDialog.h
+client/ConnectionInfoDialog.h
+client/Controller.h
+client/Defines.h
+client/Field.h
+client/Images.h
+client/Model.h
+client/Utility.h
+client/mainwindow.h
+client/ui_mainwindow.h
+client/util/PlaySound.h
+client/util/PlaySound_nix.h
+client/util/PlaySound_win.h
+server/Application.h
+server/Client.h
+server/Constants.h
+server/Field.h
+server/Server.h
+server/Statistics.h

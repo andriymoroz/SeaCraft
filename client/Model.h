@@ -7,7 +7,8 @@ enum State
 {
     ST_PLACING_SHIPS,
     ST_WAITING_STEP,
-    ST_MAKING_STEP
+    ST_MAKING_STEP,
+    ST_VIEW_RESULTS
 };
 
 class Model: public QObject
@@ -31,6 +32,7 @@ public:
     bool checkMyField() const;
     void clearEnemyField();
     void clearMyField();
+    void setEnemyField(QString enemyFieldSt);
 
 private:
     int shipNum( int size ) const;

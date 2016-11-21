@@ -38,3 +38,10 @@ size_t Client::lastSeen()
 {
     return time(NULL)-lastSeen_;
 }
+
+QString Client::getField()
+{
+ //   qDebug() << "Client::getField";
+ //   qDebug() << field_->getField();
+    return field_->getField();
+}
